@@ -1,0 +1,43 @@
+h1, h2, h3, p, small, i, span {
+    font-family: $font2;
+    color: $color-alert;
+    line-height: 1.8;
+    @include mediaQueriesMd {
+        line-height: 1.8;
+    }
+}
+
+// Titles
+h1 {
+    font-family: $font1;
+    font-size: $fontS5;
+    font-weight: 600;
+    @include mediaQueriesMd {
+        font-size: $fontSM4;
+    }
+}
+
+h2 {
+    font-size: $fontS4;
+}
+
+h3 {
+    font-size: $fontS3;
+}
+
+// Pragraph
+p, span, i, ol {
+    font-size: $fontS2;
+    font-weight: normal;
+    @include mediaQueriesMd {
+        font-size: $fontSM2;
+    }
+}
+
+small {
+    font-size: $fontS1;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

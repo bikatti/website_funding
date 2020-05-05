@@ -1,0 +1,16 @@
+.o-footerFirmDev {
+    padding-bottom: 20px;
+    &.-content {
+        @include footerFirmFunction($blueBg: false);
+    }
+    &.-index {
+        @include footerFirmFunction($blueBg: true);
+        .-btnMonlogo {
+            border-color: $color-lightin;
+            color: $color-lightin;
+        }
+        .-btnMonlogo:hover, .-btnMonlogo:active {
+            color: $color-lightin;
+        }
+    }
+}

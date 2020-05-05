@@ -1,0 +1,87 @@
+// Menus, y navegación
+
+.o-nav {
+    position: relative;
+    z-index: 2;
+}
+
+.o-navFixedContainer {
+    width: 100%;
+    height: 80px;
+    transition: height 0.25s ease-in-out 0s;
+    border-bottom: 1px solid $color-primary;
+    @include mediaQueriesMd {
+        height: 50px;
+    }
+}
+
+.o-nav__content {
+    height: inherit;
+    display: grid;
+    grid-template-columns: 19% 1fr 10%;
+    grid-gap: 0 10px;
+    grid-template-areas: "brand contentItem buttonCTA";
+    padding: 4px 80px 5px;
+    background-color: transparent;
+    @include mediaQueriesMd {
+        padding: 6px 10px 5px;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "burguer brand buttonCTA";
+    }
+}
+
+.a-brand {
+    display: flex;
+    align-items: center;
+    &__Img {
+        grid-area: brand;
+        width: 230px;
+    }
+    @include mediaQueriesMd {
+        justify-content: center;
+        padding-left: 20px;
+        box-sizing: border-box;
+        &__Img {
+            width: 150px;
+        }
+    }
+}
+
+.m-itemContent {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    grid-area: contentItem;
+    li {
+        padding-top: 10px;
+        padding-right: 25px;
+    }
+    @include mediaQueriesMd {
+        display: none;
+    }
+}
+
+.m-CallToAction {
+    grid-area: buttonCTA;
+    display: flex;
+    align-items: center;
+    @include mediaQueriesMd {
+        // display: none;
+    }
+}
+
+.a-burguer {
+    grid-area: burguer;
+    display: none;
+    align-items: center;
+    cursor: pointer;
+    &__menu {
+        width: 20px;
+        color: $color-primary;
+    }
+     @include mediaQueriesMd {
+        display: flex;
+    }
+}
