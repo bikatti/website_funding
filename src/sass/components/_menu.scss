@@ -3,6 +3,12 @@
 .o-nav {
     position: relative;
     z-index: 2;
+    &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
 }
 
 .o-navFixedContainer {
@@ -55,7 +61,7 @@
     list-style: none;
     grid-area: contentItem;
     li {
-        padding-top: 10px;
+        padding-top: 20px;
         padding-right: 25px;
     }
     @include mediaQueriesMd {

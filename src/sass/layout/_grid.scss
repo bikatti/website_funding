@@ -20,6 +20,23 @@ section .a-noMargin {
     padding-bottom: $spaceBg + 20px;
 }
 
+.-padRgTopBottom {
+    padding-top: $spaceRg;
+    padding-bottom: $spaceRg;
+}
+
+.-padSmTopBottom {
+    padding-top: $spaceSm;
+    padding-bottom: $spaceSm;
+}
+
 .-padBgBottom {
     padding-bottom: 80px;
+}
+
+.-containerText {
+    margin-bottom: $spaceSm;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 68.66%;
 }

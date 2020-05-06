@@ -5,6 +5,7 @@ html, body, p, div, h1, h2, h3, ul, ol, img, form {
 
 body {
     position: relative;
+    padding-top: 80px;
 }
 
 article, aside, figure, footer, header,
@@ -35,7 +36,7 @@ ul, ol, dl {
         padding-right: 20px;
     }
     li {
-        padding-bottom: 5px;
+        padding-bottom: $spaceXs;
     }
     @include mediaQueriesMd {
         padding-left: 10px;

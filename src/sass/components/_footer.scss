@@ -1,7 +1,29 @@
+.o-fundBanner {
+    background: linear-gradient(to bottom, $color-calm 0%, $color-alert 100%);
+}
+
+.m-fundBanner__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.m-fundBanner__explain {
+    width: 86%;
+    h3 {
+        text-align: center;
+        color: $color-darkengrey;
+    }
+}
+
+.o-footer {
+    background-color: $color-primary;
+}
+
+
 .o-footerFirmDev {
-    padding-bottom: 20px;
-    &.-content {
-        @include footerFirmFunction($blueBg: false);
+    p {
+        color: $color-lightin;
     }
     &.-index {
         @include footerFirmFunction($blueBg: true);

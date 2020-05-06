@@ -8,12 +8,15 @@
 
 .-btnMonlogo {
     margin-left: 8px;
-    padding: 3px 6px;
-    border: 2px solid $color-primary;
-    border-radius: 4px;
+    padding: 4px 20px;
+    border: 2px solid $color-lightin;
+    border-radius: 6px;
     font-size: $fontS2;
     font-weight: 600;
-    color: $color-primary;
+    color: $color-lightin;
+    &:hover {
+        background-color: $color-primary;
+    }
 }
 
 .-outlinePrimary {
@@ -35,6 +38,13 @@
             padding: 5px 10px;
         }
     } */
+}
+
+.-outlineSecondary {
+    @extend .-outlinePrimary;
+    font-size: $fontS2 + 3;
+    font-weight: 600;
+    padding: 8px $spaceRg;
 }
 
 .-wierdPrimary {
