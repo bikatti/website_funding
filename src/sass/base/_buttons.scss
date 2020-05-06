@@ -1,3 +1,11 @@
+.a-button {
+    margin-left: 10px;
+    &.-right {
+        display: flex;
+        justify-content: right;
+    }
+}
+
 .-btnMonlogo {
     margin-left: 8px;
     padding: 3px 6px;
@@ -19,16 +27,52 @@
         color: $color-lightin;
     }
     &:active, &:focus {
-        padding: 6px 30px;
-        border: 2px solid $color-secondary;
-        background-color: $color-primary;
-        color: $color-lightin;
-        
+        box-shadow: 0 0 0 3px $color-secondary;
     }
-    @include mediaQueriesMd {
+    /* @include mediaQueriesMd {
         padding: 3px 10px;
         &:active, &:focus {
             padding: 5px 10px;
         }
+    } */
+}
+
+.-wierdPrimary {
+    padding: 8px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    background: linear-gradient(to left, $color-primary 0%, $color-secondary 100%);
+    color: $color-lightin;
+    &:hover {
+        padding: 6px 28px;
+        background-image: none;
+        background-color: transparent;
+        color: $color-primary;
+        border: 2px solid $color-primary;
+        .a-arrowRight {
+            content: url('../img/icons/arrow_right.svg');
+        }
+    }
+    &:active, &:focus {
+        box-shadow: 0 0 0 3px $color-secondary;
+        background: linear-gradient(to left, $color-primary 0%, $color-secondary 100%);
+        color: $color-lightin;
+        .a-arrowRight {
+            content: url('../img/icons/arrow_right_white.svg');
+        }
+    }
+}
+
+.-fillPrimary {
+    @extend .-outlinePrimary;
+    background-color: $color-primary;
+    color: $color-lightin;
+    &:hover {
+        background-color: transparent;
+        color: $color-primary;
+    }
+    &:active, &:focus {
+        background-color: $color-primary;
+    color: $color-lightin;
     }
 }

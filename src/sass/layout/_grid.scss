@@ -1,12 +1,25 @@
 // Navegación y distribución de la página
-.o-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+.-ContainerUniversal {
+    max-width: 83.66%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px 5px;
+    box-sizing: border-box;
 }
 
-.o-navAndContent {
-    display: flex;
-    flex: 1 1 auto;
+a.-padModifier {
+    padding: 6px 20px;
+}
+
+section .a-noMargin {
+    margin: 0;
+}
+
+.-padCoolTopBottom {
+    padding-top: $spaceBg + 20px;
+    padding-bottom: $spaceBg + 20px;
+}
+
+.-padBgBottom {
+    padding-bottom: 80px;
 }

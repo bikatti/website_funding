@@ -1,0 +1,50 @@
+// .-index
+.o-hero {
+    position: relative;
+    padding-top: $spaceMd;
+    padding-bottom: $spaceMd;
+}
+
+.m-heroContent {
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    grid-gap: 0 50px;
+    grid-template-areas: "textHero imgHero";
+}
+
+.m-heroContent__text {
+    grid-area: textHero;
+    padding-left: 5%;
+}
+.a-heroContent__title {
+    max-width: 90%;
+    padding-bottom: $spaceSm;
+    h1 {
+        color: $color-primary;
+    }
+}
+
+.a-heroContent__text {
+    line-height: 1.27;
+    padding-bottom: $spaceSm;
+}
+
+.m-heroContent__img {
+    grid-area: imgHero;
+    background: $color-alert;
+}
+
+.o-callToAction {
+    &.-index {
+        background-color: $color-secondary;
+    }
+}
+
+.a-calltoActionText {
+    display: flex;
+    justify-content: center;
+    padding: $spaceSm 0;
+    &__text.-index {
+        color: $color-lightin;
+    }
+}

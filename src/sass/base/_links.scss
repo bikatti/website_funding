@@ -9,6 +9,16 @@ a {
     }
 }
 
+.a-itemLink {
+    color: $color-darkengrey;
+    &:hover {
+        color: rgba($color-darkengrey, $alpha: .8);
+    }
+    &:active {
+        border-bottom: 1px dotted $color-darkengrey;
+    }
+}
+
 .faq-list a {
     padding-top: 12px;
     padding-bottom: 4px;

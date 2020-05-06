@@ -1,0 +1,71 @@
+.o-problemStory {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.o-problemStory__content {
+    &Right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 320px;
+        grid-gap: 0 50px;
+        grid-template-areas: "problemImg problemContent";
+    }
+    &Left {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 320px;
+        grid-gap: 0 50px;
+        grid-template-areas: "explainContent explainImg";
+    }
+}
+
+.m-problemImg {
+    grid-area: problemImg;
+    background-color: $color-calm;
+}
+
+.m-problemContent {
+    grid-area: problemContent;
+}
+
+.m-explainImg {
+    grid-area: explainImg;
+    background-color: $color-calm;
+}
+
+.m-explainContent {
+    grid-area: explainContent;
+}
+
+.a-problemTitle, .a-explainTitle {
+    color: $color-primary;
+}
+
+.a-problemSubtitle, .a-explainSubtitle {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -5px;
+    &__text {
+        font-style: italic;
+    }
+    &__line {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 70px;
+        height: 2px;
+        background-color: $color-primary;
+    }
+}
+
+.a-problemContent, .a-explainContent {
+    padding-top: $spaceXs;
+    padding-bottom: $spaceSm;
+    p {
+        padding-bottom: $spaceXs;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}

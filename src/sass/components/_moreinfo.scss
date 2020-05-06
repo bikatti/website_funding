@@ -1,0 +1,64 @@
+.o-moreInfo {
+    position: relative;
+    background-color: $color-calm;
+    padding-top: $spaceMd;
+    padding-bottom: $spaceMd;
+}
+
+.o-moreInfo__content {
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    grid-template-rows: 350px;
+    grid-gap: 0 $spaceRg;
+}
+
+.m-moreInfo, .m-infoImgLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .a-moreInfo {
+        width: 85%;
+    }
+}
+
+.m-infoImgLinks {
+    position: relative;
+    top: -$spaceSm;
+}
+
+.m-linksButtons {
+    display: flex;
+    align-items: center;
+    margin-top: $spaceRg;
+}
+
+.a-imgPodcast {
+    position: relative;
+    z-index: 2;
+    width: 85%;
+}
+.a-rectangle {
+    &1 {
+        position: absolute;
+        top: $spaceXs;
+        left: $spaceBg;
+        z-index: 1;
+        width: 70%;
+        height: 255px;
+        border-radius: 10px;
+        background-color: $color-primary;
+    }
+    &2 {
+        @extend .a-rectangle1;
+        z-index: 0;
+        top: 30px;
+        left: 90px;
+        height: 235px;
+        background-color: darken($color-primary, $amount: 4%);
+    }
+}
+
+.m-iconsImgPodcast {
+    position: relative;
+    left: -18px;
+}
