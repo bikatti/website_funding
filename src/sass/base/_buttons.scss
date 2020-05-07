@@ -1,8 +1,8 @@
 .a-button {
-    margin-left: 10px;
+    margin-left: 8px;
     &.-right {
-        display: flex;
-        justify-content: right;
+        position: absolute;
+        right: 0%;
     }
 }
 
@@ -16,6 +16,7 @@
     color: $color-lightin;
     &:hover {
         background-color: $color-primary;
+        color: $color-lightin;
     }
 }
 
@@ -44,7 +45,7 @@
     @extend .-outlinePrimary;
     font-size: $fontS2 + 3;
     font-weight: 600;
-    padding: 8px $spaceRg;
+    padding: px $spaceRg;
 }
 
 .-wierdPrimary {
@@ -83,6 +84,22 @@
     }
     &:active, &:focus {
         background-color: $color-primary;
+        color: $color-lightin;
+    }
+}
+
+.-fillSecondary {
+    @extend .-fillPrimary;
+    background-color: $color-secondary;
+    border: 2px solid $color-secondary;
     color: $color-lightin;
+    &:hover {
+        background-color: transparent;
+        color: $color-secondary;
+    }
+    &:active, &:focus {
+        box-shadow: 0 0 0 3px $color-calm;
+        background-color: $color-secondary;
+        color: $color-lightin;
     }
 }
