@@ -8,12 +8,19 @@
     @include mediaQueriesLg {
         max-width: 89.66%;
     }
+    @include mediaQueries0 {
+        padding: 0;
+        max-width: 86%;
+    }
 }
 
 a.-padModifier {
     padding: 6px 20px;
     @include mediaQueriesLg {
         padding: 6px 14px;
+    }
+    @include mediaQueries0 {
+        padding: 6px 10px;
     }
 }
 

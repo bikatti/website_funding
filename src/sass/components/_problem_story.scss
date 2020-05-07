@@ -80,6 +80,12 @@
         height: 2px;
         background-color: $color-primary;
     }
+    @include mediaQueriesXs {
+        // left: $spaceRg
+        &__line {
+            margin-left: 0;
+        }
+    }
 }
 
 .a-problemContent, .a-explainContent {

@@ -105,6 +105,9 @@
             margin-bottom: 0;
         }
     }
+    @include mediaQueries0 {
+        width: 260px;
+    }
 }
 .a-box__text {
     margin-top: 10px;

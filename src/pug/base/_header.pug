@@ -4,14 +4,21 @@ nav.o-nav.sticky
    .a-brand
     a(href=linksUrl[1]): img.a-brand__Img(src=linksUrl[1]+logoResponsive[1], alt="")
 
-   .a-burguer
+   .a-burguer#burger
     img.a-burguer__menu(src=linksUrl[1]+"assets/img/icons/menu.svg", alt="")
 
-   ul.m-itemContent
-    li: a.a-itemLink(href=linksUrl[1]) Acerca de
-    li: a.a-itemLink(href=linksUrl[1]) ¿Por qué?
-    li: a.a-itemLink(href=linksUrl[1]) Curso de Ashtanga
-   
+   .m-itemContent
+    .a-burguerOut#burgerOut
+     img.a-burguerOut__menu(src=linksUrl[1]+"assets/img/icons/cancel.svg", alt="")
+    .a-brandMobile
+     a(href=linksUrl[1]): img.a-brandMobile__Img(src=linksUrl[1]+logoResponsive[1], alt="")
+    ul.m-itemContent__list
+     li: a.a-itemLink(href=linksUrl[1]) Acerca de
+     li: a.a-itemLink(href=linksUrl[1]) ¿Por qué?
+     li: a.a-itemLink(href=linksUrl[1]) Curso de Ashtanga
+    .a-button.a-noMargin
+     a.-outlinePrimary(href=linksUrl[1]) Donar
+
    .m-CallToAction
     .a-button
      a.-outlinePrimary(href=linksUrl[1]) Donar

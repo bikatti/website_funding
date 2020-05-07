@@ -17,6 +17,9 @@ a {
     &:active {
         border-bottom: 1px dotted $color-darkengrey;
     }
+    @include mediaQueriesMd {
+        font-size: $fontS3;
+    }
 }
 
 .faq-list a {
