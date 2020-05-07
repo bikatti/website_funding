@@ -4,6 +4,12 @@
         position: absolute;
         right: 0%;
     }
+    @include mediaQueriesMd {
+        margin-left: $spaceXs;
+    }
+    @include mediaQueriesXs {
+        margin-left: 8px;
+    }
 }
 
 .-btnMonlogo {
@@ -45,7 +51,7 @@
     @extend .-outlinePrimary;
     font-size: $fontS2 + 3;
     font-weight: 600;
-    padding: px $spaceRg;
+    padding: 6px $spaceRg;
 }
 
 .-wierdPrimary {

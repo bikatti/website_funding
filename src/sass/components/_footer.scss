@@ -10,10 +10,18 @@
 
 .m-fundBanner__explain {
     width: 86%;
-    h3 {
+    h3, p {
         text-align: center;
         color: $color-darkengrey;
     }
+    @include mediaQueriesLg {
+        width: 100%;
+    }
+    // @include mediaQueriesXs {
+    //     & h3, p {
+    //         text-align: left;
+    //     }
+    // }
 }
 
 .o-footer {
@@ -33,6 +41,11 @@
         }
         .-btnMonlogo:hover, .-btnMonlogo:active {
             color: $color-lightin;
+        }
+    }
+    @include mediaQueriesXs {
+        p {
+            font-size: $fontS1;
         }
     }
 }

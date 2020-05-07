@@ -10,6 +10,19 @@
     grid-template-columns: 63% 1fr;
     grid-template-rows: 350px;
     grid-gap: 0 $spaceRg;
+    @include mediaQueriesXl {
+        grid-template-columns: 56% 1fr;
+        grid-template-rows: auto;
+    }
+    @include mediaQueriesLg {
+        grid-gap: 0 $spaceMd;
+        grid-template-columns: 1fr 40%;
+    }
+    @include mediaQueriesMd {
+        grid-template-columns: 1fr;
+        grid-gap: $spaceRg 0;
+        grid-template-rows: auto 350px;
+    }
 }
 
 .m-moreInfo, .m-infoImgLinks {
@@ -19,11 +32,27 @@
     .a-moreInfo {
         width: 85%;
     }
+    @include mediaQueriesXl {
+        .a-moreInfo {
+            width: 100%;
+        }
+    }
+    @include mediaQueriesLg {
+        .a-moreInfo {
+            font-size: $spaceRg;
+        }
+    }
+    @include mediaQueriesMd {
+        align-items: center;
+    }
 }
 
 .m-infoImgLinks {
     position: relative;
     top: -$spaceSm;
+    @include mediaQueriesLg {
+        top: 0;
+    }
 }
 
 .m-linksButtons {
@@ -36,6 +65,12 @@
     position: relative;
     z-index: 2;
     width: 85%;
+    @include mediaQueriesXl {
+        width: 80%;
+    }
+    @include mediaQueriesMd {
+        width: 300px;
+    }
 }
 .a-rectangle {
     &1 {
@@ -56,9 +91,46 @@
         height: 235px;
         background-color: darken($color-primary, $amount: 4%);
     }
+    @include mediaQueriesXl {
+        &1 {
+            left: $spaceMd;
+            // height: 74%;
+        }
+        &2 {
+            left: $spaceBg;
+            // height: 66%;
+        }
+    }
+    @include mediaQueriesLg {
+        &1 {
+            top: $spaceXs;
+            height: 230px;
+        }
+        &2 {
+            top: $spaceRg;
+            height: 200px;
+        }
+    }
+    @include mediaQueriesMd {
+        &1 {
+            width: 280px;
+            height: 270px;
+            left: auto;
+        }
+        &2 {
+            display: none;
+        }
+    }
 }
 
 .m-iconsImgPodcast {
     position: relative;
     left: -18px;
+    @include mediaQueriesMd {
+        left: -8px;
+        text-align: center;
+    }
+    @include mediaQueriesXs {
+        left: 0;
+    }
 }

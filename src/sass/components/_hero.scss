@@ -3,6 +3,10 @@
     position: relative;
     padding-top: $spaceMd;
     padding-bottom: $spaceMd;
+    @include mediaQueriesMd {
+        padding-top: $spaceRg;
+        padding-bottom: $spaceRg;
+    }
 }
 
 .m-heroContent {
@@ -10,11 +14,24 @@
     grid-template-columns: 55% 1fr;
     grid-gap: 0 50px;
     grid-template-areas: "textHero imgHero";
+    @include mediaQueriesMd {
+        grid-template-columns: 86%;
+        grid-template-rows: 1fr 300px;
+        grid-gap: $spaceRg 0;
+        grid-template-areas: "textHero" "imgHero";
+        justify-content: center;
+    }
+    @include mediaQueriesXs {
+        grid-template-columns: 100%;
+    }
 }
 
 .m-heroContent__text {
     grid-area: textHero;
     padding-left: 5%;
+    @include mediaQueriesLg {
+        padding-left: 0;
+    }
 }
 .a-heroContent__title {
     max-width: 90%;
@@ -22,11 +39,26 @@
     h1 {
         color: $color-primary;
     }
+    @include mediaQueriesLg {
+        max-width: 100%;
+    }
+    @include mediaQueriesXs {
+        h1 {
+            text-align: center;
+        }
+    }
 }
 
 .a-heroContent__text {
     line-height: 1.27;
     padding-bottom: $spaceSm;
+}
+
+.a-heroContent__button {
+    @include mediaQueriesMd {
+        // display: flex;
+        text-align: center;
+    }
 }
 
 .m-heroContent__img {
@@ -46,5 +78,6 @@
     padding: $spaceSm 0;
     &__text.-index {
         color: $color-lightin;
+        text-align: center;
     }
 }

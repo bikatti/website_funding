@@ -29,6 +29,10 @@
     grid-template-areas: "brand contentItem buttonCTA";
     padding: 4px 7% 5px;
     background-color: $color-lightin;
+    @include mediaQueriesLg {
+        padding: 8px 5% 5px;
+        grid-gap: 0 $spaceXs;
+    }
     @include mediaQueriesMd {
         padding: 8px 15px 5px;
         grid-template-columns: auto 1fr auto;
@@ -42,6 +46,11 @@
     &__Img {
         grid-area: brand;
         width: 100%;
+    }
+    @include mediaQueriesLg {
+        &__Img {
+            width: 110%;
+        }
     }
     @include mediaQueriesMd {
         justify-content: center;
@@ -75,6 +84,9 @@
     align-items: center;
     .a-iconFund {
         display: none;
+    }
+    @include mediaQueriesLg {
+        justify-content: flex-end;
     }
     @include mediaQueriesMd {
         .-outlinePrimary {

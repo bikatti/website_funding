@@ -3,12 +3,26 @@
 }
 
 .m-cardTitle {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     .a-problemSubtitle {
         padding-top: 6px;
         width: 56%;
+    }
+    @include mediaQueriesLg {
+        .a-problemSubtitle {
+            width: 70%;
+        }
+    }
+    @include mediaQueriesMd {
+        width: 90%;
+        .a-problemSubtitle {
+            width: 100%;
+        }
     }
 }
 
@@ -17,6 +31,9 @@
     align-items: center;
     justify-content: center;
     margin-top: $spaceRg;
+    @include mediaQueriesSm {
+        flex-direction: column;
+    }
 }
 
 .m-box {
@@ -67,6 +84,26 @@
         width: 100px;
         box-sizing: content-box;
         padding-bottom: $spaceXs;
+    }
+    @include mediaQueriesLg {
+        margin-left: $spaceXs;
+        margin-right: $spaceXs;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    @include mediaQueriesSm {
+        margin-bottom: $spaceRg;
+        &:first-child {
+            margin-left: $spaceXs;
+        }
+        &:last-child {
+            margin-right: $spaceXs;
+            margin-bottom: 0;
+        }
     }
 }
 .a-box__text {

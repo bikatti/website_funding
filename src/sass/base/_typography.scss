@@ -18,12 +18,18 @@ h2 {
     font-family: $font1;
     font-weight: bold;
     font-size: $fontS4;
+    @include mediaQueriesMd {
+        font-size: $fontSM3;
+    }
 }
 
 h3 {
     font-family: $font1;
     font-weight: 500;
     font-size: $fontS3;
+    @include mediaQueriesLg {
+        font-size: $fontSM2 + 2;
+    }
 }
 
 // Pragraph

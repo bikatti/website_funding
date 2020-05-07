@@ -13,6 +13,13 @@
     position: relative;
     top: 3px;
     content: url('../img/icons/facebook.svg');
+    @include mediaQueriesLg {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    @include mediaQueriesMd {
+        margin-left: $spaceXs;
+    }
 }
 
 .a-instagram {
@@ -22,6 +29,9 @@
     position: relative;
     top: 3px;
     content: url('../img/icons/instagram.svg');
+    @include mediaQueriesMd {
+        margin-left: $spaceXs;
+    }
 }
 
 .a-iconsPodcast {
@@ -30,5 +40,11 @@
     box-sizing: border-box;
     &:hover {
         transform: translateY(-2px);
+    }
+    @include mediaQueriesLg {
+        width: 50px;
+    }
+    @include mediaQueriesXs {
+        width: 42px;
     }
 }
