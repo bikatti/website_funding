@@ -1,0 +1,35 @@
+.o-explainDonate {
+    position: relative;
+}
+
+.m-donateContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 $spaceMd;
+    grid-template-rows: 1fr;
+    grid-template-areas: "donateMethod donateHelp";
+    @include mediaQueriesMd {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-gap: $spaceSm 0;
+        grid-template-areas: "donateMethod" "donateHelp";
+    }
+}
+
+.m-donateContent__method {
+    grid-area: donateMethod;
+    .a-explainTitle {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.m-donateContent__help {
+    margin-bottom: $spaceSm;
+    position: relative;
+    top: $spaceBg - 3;
+    grid-area: donateHelp;
+    @include mediaQueriesMd {
+        top: 0;
+    }
+}

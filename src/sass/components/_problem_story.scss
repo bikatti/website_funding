@@ -8,14 +8,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         // grid-template-rows: 320px;
-        grid-gap: 0 50px;
+        grid-gap: 0 $spaceMd;
         grid-template-areas: "problemImg problemContent";
     }
     &Left {
         display: grid;
         grid-template-columns: 1fr 1fr;
         // grid-template-rows: 320px;
-        grid-gap: 0 50px;
+        grid-gap: 0 $spaceMd;
         grid-template-areas: "explainContent explainImg";
     }
     @include mediaQueriesLg {

@@ -7,6 +7,9 @@
         padding-top: $spaceRg;
         padding-bottom: $spaceRg;
     }
+    &.-alert {
+        background-color: $color-primary;
+    }
 }
 
 .m-heroContent {
@@ -39,6 +42,9 @@
     h1 {
         color: $color-primary;
     }
+    h1.-alert {
+        color: $color-lightin;
+    }
     @include mediaQueriesLg {
         max-width: 100%;
     }
@@ -52,6 +58,9 @@
 .a-heroContent__text {
     line-height: 1.27;
     padding-bottom: $spaceSm;
+    .-alert {
+        color: $color-lightgrey;
+    }
 }
 
 .a-heroContent__button {
@@ -75,6 +84,9 @@
     &.-index {
         background-color: $color-secondary;
     }
+    &.-donate {
+        background-color: $color-alert;
+    }
 }
 
 .a-calltoActionText {
@@ -83,6 +95,10 @@
     padding: $spaceSm 0;
     &__text.-index {
         color: $color-lightin;
+        text-align: center;
+    }
+    &__text.-donate {
+        color: $color-primary;
         text-align: center;
     }
 }

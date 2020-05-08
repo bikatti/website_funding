@@ -1,0 +1,35 @@
+.o-blogText {
+    position: relative;
+}
+
+
+.m-textContent__text {
+    margin-top: $spaceSm;
+    margin-bottom: $spaceSm;
+    p {
+        padding-bottom: $spaceXs;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include mediaQueriesMd {
+        p {
+            padding-bottom: $spaceSm;
+        }
+    }
+}
+
+.m-textContent__img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    .a-blogText__img {
+        width: 100%;
+    }
+    @include mediaQueriesXs {
+        width: 100%;
+    }
+}

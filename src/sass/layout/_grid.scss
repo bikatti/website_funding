@@ -17,6 +17,18 @@
     }
 }
 
+.-ContainerBlog {
+    @extend .-ContainerUniversal;
+    max-width: 60%;
+    @include mediaQueriesMd {
+        max-width: 89.66%;
+    }
+    @include mediaQueries0 {
+        padding: 0;
+        max-width: 86%;
+    }
+}
+
 a.-padModifier {
     padding: 6px 20px;
     @include mediaQueriesLg {
@@ -35,6 +47,11 @@ section .a-noPadding {
     padding: 0;
 }
 
+section .a-paddingMd {
+    padding-top: $spaceXs;
+    padding-bottom: $spaceSm;
+}
+
 .-padCoolTopBottom {
     padding-top: $spaceBg + 20px;
     padding-bottom: $spaceBg + 20px;
@@ -42,6 +59,11 @@ section .a-noPadding {
         padding-top: $spaceMd;
         padding-bottom: $spaceMd;
     }
+}
+
+.-padMdTopBottom {
+    padding-top: $spaceMd;
+    padding-bottom: $spaceMd;
 }
 
 .-padRgTopBottom {

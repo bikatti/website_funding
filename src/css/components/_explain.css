@@ -1,0 +1,20 @@
+.o-explainDonate {
+  position: relative; }
+
+.m-donateContent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 50px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 50px;
+  grid-template-areas: "donateMethod donateHelp"; }
+
+.m-donateContent__method {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: donateMethod; }
+
+.m-donateContent__help {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: donateHelp; }
