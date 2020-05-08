@@ -78,12 +78,6 @@
             content: url('../img/icons/arrow_right_white.svg');
         }
     }
-    @include mediaQueriesXs {
-        padding: 8px 40%;
-    }
-    @include mediaQueries0 {
-        padding: 8px 38%;
-    }
 }
 
 .-fillPrimary {

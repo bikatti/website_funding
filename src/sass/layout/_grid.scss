@@ -8,6 +8,9 @@
     @include mediaQueriesLg {
         max-width: 89.66%;
     }
+    @include mediaQueriesSm {
+        padding: 10px;
+    }
     @include mediaQueries0 {
         padding: 0;
         max-width: 86%;
@@ -26,6 +29,10 @@ a.-padModifier {
 
 section .a-noMargin {
     margin: 0;
+}
+
+section .a-noPadding {
+    padding: 0;
 }
 
 .-padCoolTopBottom {

@@ -13,13 +13,14 @@ nav.o-nav.sticky
     .a-brandMobile
      a(href=linksUrl[1]): img.a-brandMobile__Img(src=linksUrl[1]+logoResponsive[1], alt="")
     ul.m-itemContent__list
-     li: a.a-itemLink(href=linksUrl[1]) Acerca de
-     li: a.a-itemLink(href=linksUrl[1]) ¿Por qué?
-     li: a.a-itemLink(href=linksUrl[1]) Curso de Ashtanga
+     li: a.a-itemLink(href=linksUrl[1]+linksInternos[0]) #{titles[1]}
+     li: a.a-itemLink(href=linksUrl[1]) #{titles[2]}
+     li: a.a-itemLink(href=linksUrl[1]) #{titles[3]}
+     li: a.a-itemLink(href=linksUrl[1]) #{titles[5]}
     .a-button.a-noMargin
-     a.-outlinePrimary(href=linksUrl[1]) Donar
+     a.-outlinePrimary(href=linksUrl[1]) #{titles[4]}
 
    .m-CallToAction
     .a-button
-     a.-outlinePrimary(href=linksUrl[1]) Donar
+     a.-outlinePrimary(href=linksUrl[1]) #{titles[4]}
     a.a-iconFund(href=linksUrl[1]): img.a-iconFund__img(src=linksUrl[1]+"assets/img/icons/donar.png", alt="")

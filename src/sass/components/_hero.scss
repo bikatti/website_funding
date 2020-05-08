@@ -59,6 +59,11 @@
         // display: flex;
         text-align: center;
     }
+    @include mediaQueriesXs {
+        .-wierdPrimary {
+            padding: 8px 36%;
+        }
+    }
 }
 
 .m-heroContent__img {
