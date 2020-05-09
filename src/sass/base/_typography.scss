@@ -12,6 +12,9 @@ h1 {
     @include mediaQueriesMd {
         font-size: $fontSM4;
     }
+    @include mediaQueries0 {
+        font-size: $font03;
+    }
 }
 
 h2 {
@@ -21,6 +24,9 @@ h2 {
     @include mediaQueriesMd {
         font-size: $fontSM3;
     }
+    @include mediaQueries0 {
+        font-size: $font02;
+    }
 }
 
 h3 {
@@ -28,7 +34,10 @@ h3 {
     font-weight: 500;
     font-size: $fontS3;
     @include mediaQueriesLg {
-        font-size: $fontSM2 + 2;
+        font-size: $fontSM5;
+    }
+    @include mediaQueries0 {
+        font-size: $font01;
     }
 }
 

@@ -11,7 +11,7 @@
     @include mediaQueriesMd {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
-        grid-gap: $spaceSm 0;
+        grid-gap: $spaceMd 0;
         grid-template-areas: "donateMethod" "donateHelp";
     }
 }
@@ -31,5 +31,21 @@
     grid-area: donateHelp;
     @include mediaQueriesMd {
         top: 0;
+    }
+}
+
+.a-explainButton {
+    @include mediaQueriesMd {
+        text-align: center;
+    }
+    @include mediaQueriesXs {
+        .-fillSecondary {
+            padding: 8px 34%;
+        }
+    }
+    @include mediaQueries0 {
+        .-fillSecondary {
+            padding: 8px 30%;
+        }
     }
 }

@@ -80,6 +80,11 @@
     }
 }
 
+/* .-wierdSecondary {
+    @extend .-wierdPrimary;
+    background: linear-gradient(to left, $color-secondary 0%, $color-grey 100%);
+} */
+
 .-fillPrimary {
     @extend .-outlinePrimary;
     background-color: $color-primary;
@@ -96,19 +101,26 @@
 
 .-fillSecondary {
     @extend .-fillPrimary;
+    padding: 6px 20px;
     background-color: $color-secondary;
     border: 2px solid $color-secondary;
     color: $color-lightin;
     &:hover {
         background-color: transparent;
         color: $color-secondary;
+        .a-arrowRight {
+            content: url('../img/icons/arrow_right_secondary.svg');
+        }
     }
     &:active, &:focus {
         box-shadow: 0 0 0 3px $color-calm;
         background-color: $color-secondary;
         color: $color-lightin;
+        .a-arrowRight {
+            content: url('../img/icons/arrow_right_white.svg');
+        }
     }
-    @include mediaQueriesXs {
-        padding: 6px 20px;
-    }
+    // @include mediaQueriesXs {
+    //     padding: 6px 20px;
+    // }
 }
