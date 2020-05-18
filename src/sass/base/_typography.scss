@@ -45,6 +45,7 @@ h3 {
 p, i, ol, li {
     font-size: $fontS2;
     font-weight: normal;
+    line-height: 1.5;
     @include mediaQueriesLg {
         line-height: 1.6;
     }
@@ -60,6 +61,10 @@ small, span {
 
 .-uppercase {
     text-transform: uppercase;
+}
+
+.-bold {
+    font-weight: 500;
 }
 
 // List

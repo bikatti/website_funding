@@ -28,7 +28,7 @@
 
 .m-cardBox {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-top: $spaceRg;
     @include mediaQueriesSm {

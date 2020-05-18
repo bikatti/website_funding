@@ -1,34 +1,24 @@
-include lib/_var.pug
-include lib/_mixin.pug
+include ../lib/_var.pug
+include ../lib/_mixin.pug
 <!DOCTYPE html>
 html(lang="es")
- include base/_head.pug
+ include ../base/_head.pug
   meta(name="title", content=titles[0]+" - website de donación para el proyecto de yoga sobre filosofía y yoga ashtanga totalmente online")
   meta(name="description", content="Clases y conocimiento sobre en el yoga con "+titles[0]+". Queremos que seas una mejor persona")
   title #{titles[0]} - Clases y conocimiento sobre en el yoga. Queremos que seas una mejor persona
  body.o-colorIndex
 
   // menu
-  include base/_header.pug
+  include ../base/_header.pug
 
   // hero
-  include components/index/_hero.pug
+  include ../components/info/ashtanga-yoga/_hero.pug
 
-  // problem
-  include components/index/_problem.pug
-
-  // podcast
-  include components/index/_moreinfo.pug
-
-  // solution
-  //- include components/index/_solution.pug
-  include components/index/_problem_two.pug
-
-  // cards
-  include components/index/_cards.pug
+  // text
+  include ../components/info/ashtanga-yoga/_text.pug
 
   // Fund
-  include components/index/_fund.pug
+  include ../components/index/_fund.pug
 
   // footer
-  include base/_footer.pug
+  include ../base/_footer.pug

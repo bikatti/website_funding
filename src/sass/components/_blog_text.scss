@@ -33,3 +33,12 @@
         width: 100%;
     }
 }
+
+.m-textContent__list {
+    p {
+        padding-bottom: $spaceXs;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}

@@ -83,6 +83,13 @@ section .a-paddingMd {
     }
 }
 
+.-padMdBottom {
+    padding-bottom: $spaceMd;
+    @include mediaQueriesMd {
+        padding-bottom: $spaceMd;
+    }
+}
+
 .-containerText {
     margin-bottom: $spaceSm;
     margin-left: auto;

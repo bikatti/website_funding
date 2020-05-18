@@ -29,13 +29,13 @@
     @include mediaQueriesMd {
         &Right {
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 250px;
+            grid-template-rows: 1fr auto;
             grid-gap: $spaceSm 0;
             grid-template-areas: "problemContent" "problemImg";
         }
         &Left {
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 250px;
+            grid-template-rows: 1fr auto;
             grid-gap: $spaceRg 0;
             grid-template-areas: "explainContent" "explainImg";
         }
@@ -44,21 +44,54 @@
 
 .m-problemImg {
     grid-area: problemImg;
-    background-color: $color-calm;
+    margin: auto;
+    width: 88%;
+    img {
+        width: 100%;
+    }
+    @include mediaQueriesLg {
+        width: 100%;
+    }
+    @include mediaQueriesMd {
+        width: 88%;
+    }
+    @include mediaQueriesSm {
+        width: 100%;
+    }
 }
 
 .m-problemContent {
     grid-area: problemContent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .m-explainImg {
     grid-area: explainImg;
-    background-color: $color-calm;
+    margin: auto;
+    width: 88%;
+
+    img {
+        width: 100%;
+    }
+    @include mediaQueriesLg {
+        width: 100%;
+    }
+    @include mediaQueriesMd {
+        width: 88%;
+    }
+    @include mediaQueriesSm {
+        width: 100%;
+    }
 }
 
 .m-explainContent {
     grid-area: explainContent;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .a-problemTitle, .a-explainTitle {
