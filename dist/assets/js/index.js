@@ -2,6 +2,8 @@ const ipad = window.matchMedia('screen and (max-width: 768px)');
 const menuMb = document.querySelector('.m-itemContent');
 const burgerButton = document.querySelector('#burger');
 const burgerOut = document.querySelector('#burgerOut');
+const boxShadow = document.querySelector('.o-navFixedContainer');
+
 
 ipad.addListener(validation)
 
@@ -25,3 +27,15 @@ function hideShow() {
         menuMb.classList.add('-isActive');
     }
 }
+
+$(window).scroll(() => {
+    if ($(".o-nav").offset().top < 30) {
+      $(".o-navFixedContainer").removeClass(`a-boxShadowMenu`);
+    }
+  });
+
+  $(window).scroll(function() {
+    if ($(".o-nav").offset().top >= 30) {
+        $(".o-navFixedContainer").addClass(`a-boxShadowMenu`);
+    }
+  });

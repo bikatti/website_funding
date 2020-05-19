@@ -20,6 +20,9 @@
 .-ContainerBlog {
     @extend .-ContainerUniversal;
     max-width: 60%;
+    @include mediaQueriesLg {
+        max-width: 72%;
+    }
     @include mediaQueriesMd {
         max-width: 89.66%;
     }
@@ -43,7 +46,7 @@ section .a-noMargin {
     margin: 0;
 }
 
-section .a-noPadding {
+section .a-noPadding, .a-noPadding {
     padding: 0;
 }
 
@@ -90,6 +93,20 @@ section .a-paddingMd {
     }
 }
 
+.-padMdTop {
+    padding-top: $spaceMd;
+    @include mediaQueriesMd {
+        padding-top: $spaceMd;
+    }
+}
+
+.-padSmTop {
+    padding-top: $spaceSm;
+    @include mediaQueriesMd {
+        padding-top: $spaceSm;
+    }
+}
+
 .-containerText {
     margin-bottom: $spaceSm;
     margin-left: auto;
@@ -98,4 +115,21 @@ section .a-paddingMd {
     @include mediaQueriesMd {
         max-width: 100%;
     }
+}
+
+// Display
+.-dInline {
+    display: inline;
+}
+
+// border y resources
+/* .a-border {
+    // max-width: 100%;
+    @include mediaQueriesSm {
+        max-width: 70%;
+    }
+} */
+.-borderBottom {
+    opacity: .3;
+    border-bottom: 1px solid $color-secondary;
 }

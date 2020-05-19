@@ -86,7 +86,7 @@
 
 .o-callToAction {
     &.-index {
-        background-color: $color-secondary;
+        background: linear-gradient(to bottom, $color-secondary 0%, rgba($color-secondary, $alpha: .6) 110%);
     }
     &.-donate {
         background-color: $color-alert;

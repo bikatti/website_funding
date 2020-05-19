@@ -42,3 +42,54 @@
         }
     }
 }
+
+.m-textGrid {
+    &__Right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 320px;
+        grid-gap: 0 $spaceSm;
+        grid-template-areas: "textBlogImg textBlogText";
+    }
+    &__Left {
+        display: grid;
+        grid-template-columns: 60% 1fr;
+        // grid-template-rows: 320px;
+        grid-gap: 0 $spaceSm;
+        grid-template-areas: "textBlogText textBlogImg";
+    }
+    @include mediaQueriesLg {
+        &__Right {
+            grid-template-columns: 35% 1fr;
+        }
+        &__Left {
+            grid-template-columns: 58% 1fr;
+        }
+    }
+    @include mediaQueriesMd {
+        &__Right {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto;
+            grid-gap: $spaceSm 0;
+            grid-template-areas: "textBlogImg" "textBlogText";
+        }
+        &__Left {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto;
+            grid-gap: $spaceRg 0;
+            grid-template-areas: "textBlogText" "textBlogImg";
+        }
+    }
+}
+
+.m-textGridImg {
+    grid-area: textBlogImg;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+.m-textGridContent {
+    grid-area: textBlogText;
+}

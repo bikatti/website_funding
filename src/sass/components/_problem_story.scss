@@ -45,6 +45,7 @@
 .m-problemImg {
     grid-area: problemImg;
     margin: auto;
+    margin-left: 0;
     width: 88%;
     img {
         width: 100%;
@@ -54,6 +55,7 @@
     }
     @include mediaQueriesMd {
         width: 88%;
+        margin: auto;
     }
     @include mediaQueriesSm {
         width: 100%;
@@ -67,11 +69,15 @@
     justify-content: center;
 }
 
+.a-problemIcon, .a-explainIcon {
+    width: 60px;
+}
+
 .m-explainImg {
     grid-area: explainImg;
     margin: auto;
+    margin-right: 0;
     width: 88%;
-
     img {
         width: 100%;
     }
@@ -80,6 +86,7 @@
     }
     @include mediaQueriesMd {
         width: 88%;
+        margin: auto;
     }
     @include mediaQueriesSm {
         width: 100%;
@@ -112,6 +119,10 @@
         width: 70px;
         height: 2px;
         background-color: $color-primary;
+    }
+    @include mediaQueriesSm {
+        position: static;
+        padding-top: 5px;
     }
     @include mediaQueriesXs {
         // left: $spaceRg

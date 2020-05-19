@@ -67,6 +67,13 @@ small, span {
     font-weight: 500;
 }
 
+.-colorChange {
+    color: #e45eff;
+    @include mediaQueriesSm {
+        color: #ec8eff;
+    }
+}
+
 // List
 ol {
     padding: 0;

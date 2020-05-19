@@ -16,9 +16,14 @@
     height: 80px;
     transition: height 0.25s ease-in-out 0s;
     // border-bottom: 1px solid $color-primary;
+    // box-shadow: 0 0 10px 1px rgba($color-primary, $alpha: .15);
     @include mediaQueriesMd {
         height: 50px;
     }
+}
+
+.a-boxShadowMenu {
+    box-shadow: 0 0 10px 1px rgba($color-primary, $alpha: .15);
 }
 
 .o-nav__content {
@@ -27,7 +32,7 @@
     grid-template-columns: 19% 1fr 10%;
     grid-gap: 0 10px;
     grid-template-areas: "brand contentItem buttonCTA";
-    padding: 4px 7% 5px;
+    padding: 4px 7% 0;
     background-color: $color-lightin;
     @include mediaQueriesLg {
         padding: 8px 5% 5px;

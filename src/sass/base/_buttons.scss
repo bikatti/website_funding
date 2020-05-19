@@ -16,7 +16,7 @@
     margin-left: 8px;
     padding: 4px 20px;
     border: 2px solid $color-lightin;
-    border-radius: 6px;
+    border-radius: $spaceSm;
     font-size: $fontS2;
     font-weight: 600;
     color: $color-lightin;
@@ -29,7 +29,7 @@
 .-outlinePrimary {
     padding: 4px 30px;
     border: 2px solid $color-primary;
-    border-radius: 6px;
+    border-radius: $spaceSm;
     font-weight: 600;
     color: $color-primary;
     &:hover {
@@ -56,7 +56,7 @@
 
 .-wierdPrimary {
     padding: 8px 30px;
-    border-radius: 6px;
+    border-radius: $spaceSm;
     font-weight: 600;
     background: linear-gradient(to left, $color-primary 0%, $color-secondary 100%);
     color: $color-lightin;

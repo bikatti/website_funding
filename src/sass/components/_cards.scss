@@ -32,6 +32,7 @@
     justify-content: center;
     margin-top: $spaceRg;
     @include mediaQueriesSm {
+        align-items: center;
         flex-direction: column;
     }
 }
