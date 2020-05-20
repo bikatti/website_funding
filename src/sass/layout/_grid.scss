@@ -100,7 +100,7 @@ section .a-paddingMd {
 .-padBgTop {
     padding-top: $spaceBg + 10px;
     @include mediaQueriesMd {
-        padding-top: $spaceBg + 10px;
+        padding-top: $spaceMd;
     }
 }
 
