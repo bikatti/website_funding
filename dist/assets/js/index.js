@@ -3,7 +3,7 @@ const menuMb = document.querySelector('.m-itemContent');
 const burgerButton = document.querySelector('#burger');
 const burgerOut = document.querySelector('#burgerOut');
 const boxShadow = document.querySelector('.o-navFixedContainer');
-
+const bookmark = document.querySelector('#upBookmark');
 
 ipad.addListener(validation)
 

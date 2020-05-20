@@ -6,13 +6,21 @@ html(lang="es")
   meta(name="title", content=titles[1]+" "+ titles[0])
   meta(name="description", content="Clases y conocimiento sobre en el yoga con "+titles[0]+". Aquí podrás leer más acerca de mí")
   title #{titles[1]} - #{titles[0]}
- body.o-colorIndex
+ body
 
   // menu
   include base/_header.pug
 
   // hero
   include components/acerca_de/_hero.pug
+
+  // Bookmarks
+  include components/acerca_de/_cards.pug
+
+  // Icon-Button
+  .o-buttonBookmark
+   a(href="#upBookmark"): .m-buttonBookmark
+    img.a-iconBookmark(src=linksUrl[1]+"assets/img/icons/bookmark.svg")
 
   // text
   include components/acerca_de/_text.pug

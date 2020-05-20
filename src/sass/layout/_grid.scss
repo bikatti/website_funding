@@ -50,6 +50,10 @@ section .a-noPadding, .a-noPadding {
     padding: 0;
 }
 
+.-d-none {
+    display: none !important;
+}
+
 section .a-paddingMd {
     padding-top: $spaceXs;
     padding-bottom: $spaceSm;
@@ -93,6 +97,13 @@ section .a-paddingMd {
     }
 }
 
+.-padBgTop {
+    padding-top: $spaceBg + 10px;
+    @include mediaQueriesMd {
+        padding-top: $spaceBg + 10px;
+    }
+}
+
 .-padMdTop {
     padding-top: $spaceMd;
     @include mediaQueriesMd {
@@ -120,6 +131,10 @@ section .a-paddingMd {
 // Display
 .-dInline {
     display: inline;
+}
+
+.-alignItemsLeft {
+    align-items: left !important;
 }
 
 // border y resources

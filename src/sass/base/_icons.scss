@@ -61,3 +61,33 @@
     // margin-top: 5px;
     margin-right: 3px;
 }
+
+.o-buttonBookmark {
+    position: fixed;
+    right: $spaceRg;
+    bottom: $spaceRg;
+    z-index: 100;
+    @include mediaQueriesMd {
+        right: $spaceSm;
+        bottom: $spaceSm;
+    }
+    @include mediaQueriesXxs {
+        right: $spaceXs;
+    }
+}
+
+.m-buttonBookmark {
+    width: $spaceMd;
+    height: $spaceMd;
+    background-color: $color-lightin;
+    border-radius: $spaceRg;
+    box-shadow: 0 0 10px 0 $color-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.a-iconBookmark {
+    width: $spaceRg;
+}

@@ -71,6 +71,9 @@
 
 .a-problemIcon, .a-explainIcon {
     width: 60px;
+    @include mediaQueriesSm {
+        margin-bottom: 5px;
+    }
 }
 
 .m-explainImg {
@@ -125,9 +128,12 @@
         padding-top: 5px;
     }
     @include mediaQueriesXs {
-        // left: $spaceRg
         &__line {
+            margin-top: 3px;
             margin-left: 0;
+        }
+        &__line.-right {
+            margin-left: 10px;
         }
     }
 }
