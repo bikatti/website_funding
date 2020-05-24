@@ -9,6 +9,49 @@
     left: -70px;
     width: 100%;
     z-index: 2;
+    .-errorBg & {
+        top: -310px;
+        right: -80px;
+        left: auto;
+        width: 63%;
+    }
+    @include mediaQueriesLg {
+        left: auto;
+        right: -60px;
+        width: 156%;
+    }
+    @include mediaQueriesMd {
+        width: 250%;
+        .-errorBg & {
+            top: 0;
+            right: -10px;
+            width: 130%;
+        }
+    }
+    @include mediaQueriesSm {
+        width: 350%;
+        right: -170px;
+        .-errorBg & {
+            top: -50px;
+            right: -80px;
+            width: 170%;
+        }
+    }
+    @include mediaQueriesXs {
+        width: 550%;
+        right: -370px;
+        top: 180px;
+        .-errorBg & {
+            top: -50px;
+            right: -40px;
+            width: 300%;
+        }
+    }
+    @include mediaQueriesXxs {
+        top: 180px;
+        width: 680%;
+        right: -420px;
+    }
 }
 
 .line{
@@ -17,4 +60,7 @@
     // stroke-linecap:round;
     stroke-linejoin:round;
     stroke-width: 28px;
+    .-errorBg & {
+        stroke-width: 38px;
+    }
 }

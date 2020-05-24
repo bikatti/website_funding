@@ -10,6 +10,11 @@
     &.-alert {
         background-color: $color-primary;
     }
+    &.-error {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color: $color-calm;
+    }
 }
 
 .m-heroContent {
@@ -17,6 +22,10 @@
     grid-template-columns: 55% 1fr;
     grid-gap: 0 50px;
     grid-template-areas: "textHero imgHero";
+    .-error & {
+        position: relative;
+        z-index: 5;
+    }
     @include mediaQueriesMd {
         grid-template-columns: 86%;
         grid-template-rows: 1fr auto;
@@ -83,6 +92,42 @@
     }
 }
 
+.a-heroContent__form {
+    display: flex;
+    flex-direction: row;
+    input {
+        font-size: 20px;
+    }
+    @include mediaQueriesXs {
+        justify-content: center;
+        input {
+            font-size: $fontSM2;
+        }
+    }
+    @include mediaQueriesXxs {
+        input {
+            font-size: $fontS2;
+        }
+    }
+}
+.a-mailchimpGroup {
+    margin-right: $spaceXs;
+    @include mediaQueriesXxs {
+        margin-right: 8px;
+    }
+}
+.a-mailchimpMail {
+    border-radius: $spaceRg;
+    border: 2px solid $color-primary;
+    padding-top: 5px;
+    padding-left: $spaceXs;
+    padding-right: $spaceXs;
+    &:focus {
+        outline: none;
+        border-color: $color-secondary;
+    }
+}
+
 .m-heroContent__img {
     grid-area: imgHero;
     margin: auto;
@@ -90,6 +135,8 @@
         width: 100%;
     }
 }
+
+
 
 .o-callToAction {
     &.-index {

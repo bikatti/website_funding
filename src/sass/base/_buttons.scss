@@ -124,3 +124,22 @@
     //     padding: 6px 20px;
     // }
 }
+
+.-btnEmail {
+    border-radius: $spaceRg;
+    border: 2px solid $color-primary;
+    background-color: $color-primary;
+    color: $color-lightin;
+    padding-top: 5px;
+    padding-left: $spaceXs;
+    padding-right: $spaceXs;
+    &:hover {
+        background-color: transparent;
+        color: $color-primary;
+    }
+    &:active, &:focus {
+        box-shadow: 0 0 0 3px $color-secondary;
+        background-color: $color-primary;
+        color: $color-lightin;
+    }
+}
