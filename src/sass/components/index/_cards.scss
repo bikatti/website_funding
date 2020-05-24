@@ -6,6 +6,11 @@
     &.-course {
         z-index: 5;
     }
+    @include mediaQueriesSm {
+        &.-course {
+            padding-top: 100px;
+        }
+    }
 }
 
 .m-cardTitle {
@@ -37,6 +42,19 @@
     align-items: flex-start;
     justify-content: center;
     margin-top: $spaceRg;
+    @include mediaQueriesXl {
+        &.-course {
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+            max-width: 70%;
+        }
+    }
+    @include mediaQueriesLg {
+        &.-course {
+            max-width: 89%;
+        }
+    }
     @include mediaQueriesSm {
         align-items: center;
         flex-direction: column;
@@ -109,6 +127,11 @@
         box-sizing: content-box;
         padding-bottom: $spaceXs;
     }
+    @include mediaQueriesXl {
+        &.-course {
+            margin-top: $spaceRg;
+        }
+    }
     @include mediaQueriesLg {
         margin-left: $spaceXs;
         margin-right: $spaceXs;
@@ -117,6 +140,15 @@
         }
         &:last-child {
             margin-right: 0;
+        }
+        &.-course {
+            width: 320px;
+        }
+        &.-course:first-child {
+            margin-left: $spaceXs;
+        }
+        &.-course:last-child {
+            margin-right: $spaceXs;
         }
     }
     @include mediaQueriesSm {
@@ -128,12 +160,30 @@
             margin-right: $spaceXs;
             margin-bottom: 0;
         }
+        &.-course {
+            margin: 0;
+            margin-bottom: $spaceMd;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
         &__title {
             font-size: $font02;
         }
     }
+    @include mediaQueriesXxs {
+        &.-course {
+            width: 300px;
+        }
+    }
     @include mediaQueries0 {
         width: 260px;
+        &.-course {
+            width: 270px;
+        }
     }
 }
 
@@ -149,7 +199,13 @@
 }
 
 .m-box__profileImg {
-    width: 25px;
+    width: $spaceSm;
+    @include mediaQueriesSm {
+        width: $spaceRg;
+    }
+    @include mediaQueries0 {
+        width: $spaceSm;
+    }
 }
 
 .a-course__profile {
@@ -181,6 +237,7 @@
     .m-box__profileImg {
         margin-right: 5px;
     }
+    
 }
 
 .m-box__stage {
@@ -192,6 +249,11 @@
     .a-box__stage {
         color: $color-lightin;
         padding: 0 $spaceXs;
+    }
+    @include mediaQueries0 {
+        .a-box__stage {
+            font-size: $fontS2;
+        }
     }
 }
 
