@@ -67,6 +67,10 @@ small, span {
     font-weight: 500;
 }
 
+.-colorPrimary {
+    color: $color-primary;
+}
+
 .-colorChange {
     color: #e45eff;
     @include mediaQueriesSm {

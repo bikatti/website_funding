@@ -30,6 +30,8 @@
     }
 }
 
+
+
 .m-heroContent__text {
     grid-area: textHero;
     padding-left: 5%;
@@ -70,6 +72,11 @@
         text-align: center;
     }
     @include mediaQueriesXs {
+        .-wierdPrimary {
+            padding: 8px 33%;
+        }
+    }
+    @include mediaQueriesXxs {
         .-wierdPrimary {
             padding: 8px 36%;
         }

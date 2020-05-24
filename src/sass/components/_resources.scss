@@ -1,0 +1,20 @@
+.o-line {
+    position: relative;
+    overflow: hidden;
+}
+
+.m-lineAbsolute {
+    position: absolute;
+    top: -120px;
+    left: -70px;
+    width: 100%;
+    z-index: 2;
+}
+
+.line{
+    fill:none;
+    stroke:#efb1ff;
+    // stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width: 28px;
+}

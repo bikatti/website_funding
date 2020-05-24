@@ -1,0 +1,215 @@
+.o-card {
+    position: relative;
+    &.-index {
+        padding-top: 0;
+    }
+    &.-course {
+        z-index: 5;
+    }
+}
+
+.m-cardTitle {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .a-problemSubtitle {
+        padding-top: 6px;
+        width: 56%;
+    }
+    @include mediaQueriesLg {
+        .a-problemSubtitle {
+            width: 70%;
+        }
+    }
+    @include mediaQueriesMd {
+        width: 90%;
+        .a-problemSubtitle {
+            width: 100%;
+        }
+    }
+}
+
+.m-cardBox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: $spaceRg;
+    @include mediaQueriesSm {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.m-box {
+    box-shadow: $shadow1;
+    width: 300px;
+    margin-left: $spaceSm;
+    margin-right: $spaceSm;
+    padding: 20px;
+    text-align: left;
+    opacity: 0;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    top: 60px;
+    z-index: 10;
+    background-color: $color-calm;
+    background-repeat: no-repeat;
+    animation-name: Upbox;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.15, 1, 0.33, 1);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    transition: all 0.3s cubic-bezier(0.15, 1, 0.33, 1) 0s;
+    &.-course {
+        background-color: $color-lightin;
+        padding: 0;
+        display: flex;
+        margin-left: $spaceXs;
+        margin-right: $spaceXs;
+        flex-direction: column;
+        width: 280px;
+        border-radius: 8px;
+    }
+    &:hover {
+        transform: translateY(-2px);
+        text-decoration: none;
+        color: $color-primary;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding-top: $spaceXs;
+        padding-bottom: $spaceXs;
+        align-items: center;
+        &.-course {
+            align-items: start;
+            padding: 0  $spaceXs $spaceXs;
+        }
+    }
+    &__title {
+        padding-bottom: $spaceXs;
+        text-align: center;
+        &.-course {
+            text-align: left;
+            padding-bottom: 2px;
+        }
+    }
+    &__img {
+        height: 100px;
+        width: 100px;
+        box-sizing: content-box;
+        padding-bottom: $spaceXs;
+    }
+    @include mediaQueriesLg {
+        margin-left: $spaceXs;
+        margin-right: $spaceXs;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    @include mediaQueriesSm {
+        margin-bottom: $spaceRg;
+        &:first-child {
+            margin-left: $spaceXs;
+        }
+        &:last-child {
+            margin-right: $spaceXs;
+            margin-bottom: 0;
+        }
+        &__title {
+            font-size: $font02;
+        }
+    }
+    @include mediaQueries0 {
+        width: 260px;
+    }
+}
+
+.m-box__containerImg {
+    width: 100%;
+    height: 150px;
+    margin-bottom: $spaceXs;
+}
+.a-course__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.m-box__profileImg {
+    width: 25px;
+}
+
+.a-course__profile {
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+.m-box__icon {
+    display: flex;
+    margin-left: 5px;
+}
+.a-course__icon {
+    width: 15px;
+    margin-right: 5px;
+}
+
+
+.m-box__details {
+    display: flex;
+    margin-top: $spaceXs;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    .m-box__profile {
+        display: flex;
+        align-items: center;
+    }
+    .m-box__profileImg {
+        margin-right: 5px;
+    }
+}
+
+.m-box__stage {
+    border-radius: $spaceSm;
+    background-color: $color-darkgrey;
+    &.-on {
+        background-color: $color-primary;
+    }
+    .a-box__stage {
+        color: $color-lightin;
+        padding: 0 $spaceXs;
+    }
+}
+
+.a-box__text {
+    margin-top: 10px;
+    line-height: 1.3;
+}
+
+@keyframes Upbox {
+    0% {
+        top: 60px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}

@@ -7,7 +7,20 @@ mixin box(a="#", img="assets/img/icons/arrow_right.svg", n="", title="Box con te
    img(class="m-box__img", src=""+img, alt=""+n)
    p.a-box__text=texto
 
-mixin boxTitle(a="#", title="Box con texto")
- a(class="m-box m-box__anima", href=""+a)
-  .m-box__container
-   h3.m-box__title.a-explainTitle=title
+mixin boxCourse(a="#", img, n, title="Curso de ...", icon, d, texto="Hey!! aqui va descripción", pro, profe, cBg, status="Fácil")
+ a(class="m-box -course m-box__anima", href=""+a)
+  .m-box__containerImg
+   img(class="a-course__img", src=linksUrl[1]+img, alt="Curso de "+n)
+  .m-box__container.-course
+   h3.m-box__title.-course=title
+   .m-box__icon
+    img(class="a-course__icon", src=linksUrl[1]+icon, alt="Nivel de dificultad: "+d)
+    p=d
+   p.a-box__text=texto
+   .m-box__details
+    .m-box__profile
+     .m-box__profileImg
+      img(class="a-course__profile", src=linksUrl[1]+pro, alt="Por la profesora "+profe)
+     p=profe
+    div(class="m-box__stage "+cBg)
+     p.a-box__stage=status
