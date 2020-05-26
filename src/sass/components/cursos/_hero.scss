@@ -5,6 +5,8 @@
     &.-coursePage {
         background-color: $color-calm;
         overflow-x: hidden;
+        position: relative;
+        overflow-y: hidden;
     }
     @include mediaQueriesMd {
         &.-coursePage {
@@ -248,4 +250,11 @@
         width: 50px;
         right: -$spaceSm;
     }
+}
+
+.o-heroWave {
+    overflow-x: hidden;
+    position: relative;
+    transform: scaleX(1.5);
+    margin-bottom: $spaceSm;
 }

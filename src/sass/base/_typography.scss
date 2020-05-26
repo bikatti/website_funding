@@ -59,6 +59,19 @@ small, span {
     font-size: $fontS1;
 }
 
+.-spaceParagraph{
+    p {
+        padding-bottom: $spaceXs;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.a-colorPhrase {
+    color: $color-secondary;
+}
+
 .-uppercase {
     text-transform: uppercase;
 }

@@ -70,3 +70,11 @@ ol {
     margin-top: 0;
     margin-bottom: $fontSM2;
 }
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.o-Hidden {
+    overflow-x: hidden;
+}

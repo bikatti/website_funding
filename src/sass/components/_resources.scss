@@ -64,3 +64,34 @@
         stroke-width: 38px;
     }
 }
+
+.m-mountain {
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.a-lineRect {
+    position: relative;
+    top: 18px;
+    height: 100%;
+    width: 5px;
+    border-right: 2px solid $color-secondary;
+    @include mediaQueries0 {
+        width: 8px;
+    }
+}
+.a-heyDot {
+    position: absolute;
+    top: 8px;
+    left: -46px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    @include mediaQueriesMd {
+        left: -26px;
+    }
+    @include mediaQueries0 {
+        left: -23px;
+    }
+}

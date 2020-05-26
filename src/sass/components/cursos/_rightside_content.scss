@@ -1,0 +1,36 @@
+.m-metadataCourse__levels {
+    display: flex;
+    justify-content: center;
+}
+
+.m-levelsCourse, .m-onlineCourse, .m-metadataCourse__info {
+    display: flex;
+    align-items: center;
+    margin-right: $spaceXs;
+    justify-content: center;
+    .a-easy {
+        width: 38px;
+        margin-right: $spaceXs;
+    }
+    .a-mobile {
+        width: 60px;
+    }
+    .a-info {
+        width: 65px ;
+        margin-right: $spaceXs;
+    }
+}
+.m-metadataCourse__teacher {
+    position: relative;
+}
+
+.m-metadataCourse__text {
+    margin-left: 55px;
+}
+
+.m-metadataCourse__profile {
+    display: block;
+    width: 45px;
+    position: absolute;
+    left: 0;
+}

@@ -30,30 +30,25 @@ a {
     justify-content: center;
     position: relative;
     font-size: $fontSM2;
+    color: $color-darkgrey;
     background-color: transparent;
     transition: .5s;
-    span {
-        width: 98%;
-        font-weight: 500;
-        line-height: 1.4;
-        &.collapsed {
-            color: $color-primary;
-        }
-        &:hover {
-            color: rgba($color-primary, $alpha: .8);
-        }
-        &:active, &:focus {
-            outline: none;
-            text-decoration: underline;
-        }
+    max-width: 98%;
+    font-weight: 500;
+    line-height: 1.4;
+    &.collapsed {
+        color: $color-primary;
+    }
+    &:hover {
+        color: rgba($color-primary, $alpha: .8);
     }
     &:active, &:focus {
         outline: none;
+        text-decoration: underline;
     }
+
     @include mediaQueriesSm {
-        span {
-            width: 90%;
-        }
+        width: 90%;
     }
 }
 

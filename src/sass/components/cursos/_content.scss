@@ -1,0 +1,36 @@
+.m-contentCourse {
+    display: grid;
+    grid-template-columns: 62% 1fr;
+    grid-gap: 0 50px;
+    @include mediaQueriesLg {
+        grid-template-columns: 55% 1fr;
+    }
+    @include mediaQueriesMd {
+        grid-template-columns: 86%;
+        grid-template-rows: 1fr auto;
+        grid-gap: $spaceBg 0;
+        justify-content: center;
+    }
+    @include mediaQueriesXs {
+        grid-gap: $spaceMd 0;
+        grid-template-columns: 100%;
+    }
+}
+
+.a-problemTitle, .a-explainTitle {
+    color: $color-primary;
+}
+
+.a-problemSubtitle {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -5px;
+    &__text {
+        font-style: italic;
+    }
+    @include mediaQueriesSm {
+        position: static;
+        padding-top: 5px;
+    }
+}

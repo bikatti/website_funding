@@ -1,0 +1,76 @@
+.faq-list {
+    padding: 0;
+    list-style: none;
+}
+
+.faq-list a i {
+    font-size: 1em;
+    /* position: absolute;
+    right: 0;
+    top: 20px; */
+    content: "Hello";
+}
+
+.a-iconFaq {
+    /* height: 20px;
+    width: 20px; */
+    display: inline-block;
+    text-align: center;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    &__icon::before {
+        content: url('/dist/assets/img/icons/arrow_head.svg');
+    }
+}
+
+a[aria-expanded=true] .a-iconFaq {
+    transform: rotate(-90deg);
+}
+
+@keyframes plusRotate {
+    0% {
+        transform: rotate(-130deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.faq-list {
+    li {
+        border-bottom: $borderBottom;
+        &::marker {
+            visibility: visible;
+        }
+    }
+    .-check__container {
+        li {
+            border-bottom: none;
+        }
+        p:first-child {
+            padding-top: 0;
+        }
+    }
+}
+
+.faq-list p {
+    &:first-child {
+        padding-top: 5px;
+    }
+}

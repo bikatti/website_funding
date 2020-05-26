@@ -1,0 +1,79 @@
+.m-aboutCourse__title {
+    margin-bottom: $spaceSm;
+    .a-problemTitle {
+        margin-bottom: $spaceXs;
+    }
+}
+
+.m-aboutCourse__extras {
+    max-width: 80%;
+    padding: $spaceXs;
+    margin-top: $spaceMd;
+    margin-bottom: $spaceMd;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $color-lightgrey;
+    border-radius: $spaceXs;
+    .a-info, .a-calendarWeek {
+        margin-right: $spaceXs;
+    }
+    @include mediaQueriesLg {
+        max-width: 90%;
+    }
+    @include mediaQueriesXs {
+        max-width: 100%;
+    }
+}
+
+.m-aboutCourse__action {
+    max-width: 60%;
+    position: relative;
+    margin-left: $spaceSm;
+    h2 {
+        padding-top: 30px;
+        padding-left: $spaceSm;
+    }
+    &::before {
+        position: absolute;
+        opacity: .15;
+        z-index: -1;
+        width: 100px;
+        content: url('../img/icons/Quote.svg');
+    }
+    @include mediaQueriesLg {
+        max-width: 100%;
+    }
+    @include mediaQueriesXs {
+        margin-left: 0;
+    }
+}
+
+.m-aboutCourse__material, .m-aboutCourse__time {
+    display: flex;
+    align-items: center;
+}
+
+
+.m-aboutCourse__things {
+    display: flex;
+}
+
+.m-contentTimeline {
+    min-width: 10px;
+    margin-right: $spaceRg;
+    @include mediaQueriesMd {
+        margin-right: $spaceXs;
+    }
+}
+
+.m-contentExplain {
+    width: 100%;
+}
+
+.m-contentCounter {
+    position: relative;
+    margin-bottom: $spaceRg;
+    &:last-child {
+        margin-bottom: 2px;
+    }
+}

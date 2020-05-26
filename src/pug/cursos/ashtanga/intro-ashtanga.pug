@@ -6,7 +6,7 @@ html(lang="es")
   meta(name="title", content=titles[1]+" "+ titles[0])
   meta(name="description", content="Clases y conocimiento sobre en el yoga con "+titles[0]+". Aquí podrás leer más acerca de mí")
   title #{titles[6]} - #{titles[0]}
- body
+ body.o-Hidden
 
   // menu
   include ../../base/_header.pug
@@ -14,9 +14,15 @@ html(lang="es")
   // hero
   include ../../components/curso/into-ashtanga/index/_hero.pug
 
-  // line
-  .o-line
+  // lines and content
+  .o-contentCourse.-padMdTopBottom
+   .o-line.m-contentCourse.-ContainerUniversal
+    include ../../components/curso/into-ashtanga/index/_left.pug
+    include ../../components/curso/into-ashtanga/index/_meta_right.pug
    //-include ../../components/curso/_line.pug
+
+  // Faq
+  include ../../components/curso/into-ashtanga/index/_faq.pug
 
   // Fund
   include ../../components/index/_fund.pug

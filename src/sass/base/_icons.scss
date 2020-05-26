@@ -92,9 +92,34 @@
     width: $spaceRg;
 }
 
+.a-easy {
+    content: url('../img/icons/easy.svg');
+}
+
+.a-intermedio {
+    content: url('../img/icons/intermedio.svg');
+}
+
+.a-hard {
+    content: url('../img/icons/hard.svg');
+}
+
+.a-mobile {
+    content: url('../img/icons/mobile.svg');
+}
+
+.a-info {
+    width: $spaceBg;
+    content: url('../img/icons/info.svg');
+}
+
 .a-calendar {
     width: $spaceBg;
     content: url('../img/icons/calendar_time.svg');
+}
+.a-calendarWeek {
+    width: $spaceBg;
+    content: url('../img/icons/calendar.svg');
 }
 
 .a-circleLines {
