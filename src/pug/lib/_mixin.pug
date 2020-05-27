@@ -32,6 +32,7 @@ mixin contentCounter(c="Nullam et dui eu eros egestas convallis vitae placerat")
    h3=c
 
 mixin nameFaq(id="faq1", n="pregunta")
- a(data-toggle="collapse", class="collapsed aqui" href="#"+id)=n
+ a(data-toggle="collapse", class="collapsed aqui" href="#"+id)
+  span=n
   .a-iconFaq
    .a-iconFaq__icon

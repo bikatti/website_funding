@@ -1,6 +1,20 @@
 .faq-list {
     padding: 0;
     list-style: none;
+    max-width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    @include mediaQueriesMd {
+        max-width: 95%;
+    }
+    @include mediaQueriesXs {
+        max-width: 100%;
+    }
+}
+
+.m-faqContent__title {
+    text-align: center;
+    margin-bottom: $spaceSm;
 }
 
 .faq-list a i {
@@ -11,35 +25,6 @@
     content: "Hello";
 }
 
-.a-iconFaq {
-    /* height: 20px;
-    width: 20px; */
-    display: inline-block;
-    text-align: center;
-    transform: rotate(90deg);
-    position: absolute;
-    right: 0;
-    &__icon::before {
-        content: url('/dist/assets/img/icons/arrow_head.svg');
-    }
-}
-
-a[aria-expanded=true] .a-iconFaq {
-    transform: rotate(-90deg);
-}
-
-@keyframes plusRotate {
-    0% {
-        transform: rotate(-130deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.fadeInUp {
-    animation-name: fadeInUp;
-}
 
 @keyframes fadeInUp {
     0% {
@@ -52,11 +37,20 @@ a[aria-expanded=true] .a-iconFaq {
     }
 }
 
-.faq-list {
+ol.faq-list {
     li {
         border-bottom: $borderBottom;
+        position: relative;
         &::marker {
             visibility: visible;
+        }
+        .show {
+            margin-bottom: $spaceXs;
+        }
+    }
+    @include mediaQueriesMd {
+        li {
+            padding-bottom: $spaceXs;
         }
     }
     .-check__container {

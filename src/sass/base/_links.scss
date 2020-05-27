@@ -22,23 +22,9 @@ a {
     }
 }
 
-.faq-list a {
-    padding-top: 12px;
-    padding-bottom: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    font-size: $fontSM2;
-    color: $color-darkgrey;
-    background-color: transparent;
-    transition: .5s;
-    max-width: 98%;
-    font-weight: 500;
-    line-height: 1.4;
-    &.collapsed {
-        color: $color-primary;
-    }
+.faq-list span {
+    font-size: $fontSM5;
+    width: 88%;
     &:hover {
         color: rgba($color-primary, $alpha: .8);
     }
@@ -46,9 +32,34 @@ a {
         outline: none;
         text-decoration: underline;
     }
+}
 
-    @include mediaQueriesSm {
-        width: 90%;
+.faq-list a {
+    padding-top: 12px;
+    padding-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+    transition: .5s;
+    line-height: 1.4;
+    &::after {
+        display: block;
+        width: 25px;
+        position: absolute;
+        right: 0;
+        margin: 2px 5px 0;
+        content: url('../img/icons/arrow_down.svg');
+    }
+    &[aria-expanded=true] {
+        &::after {
+            margin-right: 18px;
+            transform: rotate(180deg);
+        }
+    }
+    &:active, &:focus {
+        outline: none;
     }
 }
 

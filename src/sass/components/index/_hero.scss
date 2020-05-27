@@ -139,6 +139,8 @@
 
 
 .o-callToAction {
+    position: relative;
+    overflow: hidden;
     &.-index {
         background: linear-gradient(to bottom, $color-secondary 0%, rgba($color-secondary, $alpha: .6) 110%);
     }
@@ -146,11 +148,48 @@
         background-color: $color-alert;
     }
 }
+.m-calltoActionContent {
+    overflow: hidden;
+    .a-thingsRight {
+        position: absolute;
+        top: -130px;
+        right: -$spaceSm;
+        width: 30%;
+        z-index: 0;
+        content: url('../img/icons/things_right.svg');
+    }
+    .a-thingsLeft {
+        position: absolute;
+        top: -130px;
+        left: -$spaceSm;
+        width: 30%;
+        z-index: 0;
+        content: url('../img/icons/things_left.svg');
+    }
+    @include mediaQueriesMd {
+        .a-thingsRight, .a-thingsLeft  {
+            top: -48px;
+        }
+    }
+    @include mediaQueriesXs {
+        .a-thingsRight {
+            width: 75%;
+            right: -120px;
+        }
+        .a-thingsLeft {
+            width: 75%;
+            top: -150px;
+            left: -200px;
+        }
+    }
+}
 
 .a-calltoActionText {
     display: flex;
     justify-content: center;
     padding: $spaceSm 0;
+    position: relative;
+    z-index: 5;
     &__text.-index {
         color: $color-lightin;
         text-align: center;
