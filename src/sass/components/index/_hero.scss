@@ -44,6 +44,10 @@
 .m-heroContent__text {
     grid-area: textHero;
     padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: $spaceSm;
     @include mediaQueriesLg {
         padding-left: 0;
     }
@@ -152,7 +156,7 @@
     overflow: hidden;
     .a-thingsRight {
         position: absolute;
-        top: -130px;
+        top: -110px;
         right: -$spaceSm;
         width: 30%;
         z-index: 0;
@@ -160,24 +164,38 @@
     }
     .a-thingsLeft {
         position: absolute;
-        top: -130px;
+        top: -110px;
         left: -$spaceSm;
         width: 30%;
         z-index: 0;
         content: url('../img/icons/things_left.svg');
     }
+    @include mediaQueriesLg {
+        .a-thingsRight {
+            width: 250px;
+            right: -150px;
+        }
+    }
     @include mediaQueriesMd {
         .a-thingsRight, .a-thingsLeft  {
+            top: -38px;
+            right: -50px;
+        }
+        .a-thingsLeft {
+            width: 250px;
             top: -48px;
+            left: -$spaceBg;
         }
     }
     @include mediaQueriesXs {
         .a-thingsRight {
-            width: 75%;
-            right: -120px;
+            // width: 75%;
+            top: auto;
+            bottom: -100px;
+            right: -$spaceSm;
         }
         .a-thingsLeft {
-            width: 75%;
+            // width: 75%;
             top: -150px;
             left: -200px;
         }

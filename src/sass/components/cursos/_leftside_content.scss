@@ -77,3 +77,18 @@
         margin-bottom: 2px;
     }
 }
+
+.m-contentCounter__info {
+    display: flex;
+    flex-direction: column;
+}
+.m-contentCounter__time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    .a-time {
+        width: 50px;
+        margin-right: 8px;
+    }
+}
