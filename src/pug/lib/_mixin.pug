@@ -7,21 +7,22 @@ mixin box(a="#", img="assets/img/icons/arrow_right.svg", n="", title="Box con te
    img(class="m-box__img", src=""+img, alt=""+n)
    p.a-box__text=texto
 
-mixin boxCourse(a="#", img, n, title="Curso de ...", icon, d, texto="Hey!! aqui va descripción", pro, profe, cBg, status="Fácil")
+mixin boxCourse(a="#", img, n, tipo="Curso", title="Curso de ...", icon, d, texto="Hey!! aqui va descripción", pro, profe, cBg, status="Fácil")
  a(class="m-box -course m-box__anima", href=""+a)
   .m-box__containerImg
    img(class="a-course__img", src=linksUrl[1]+img, alt="Curso de "+n)
   .m-box__container.-course
+   p.-colorPrimary.-bold=tipo
    h3.m-box__title.-course=title
-   .m-box__icon
-    img(class="a-course__icon", src=linksUrl[1]+icon, alt="Nivel de dificultad: "+d)
-    p=d
-   p.a-box__text=texto
-   .m-box__details
-    .m-box__profile
+   .m-box__profile
      .m-box__profileImg
       img(class="a-course__profile", src=linksUrl[1]+pro, alt="Por la profesora "+profe)
      p=profe
+   p.a-box__text=texto
+   .m-box__details
+    .m-box__icon
+     img(class="a-course__icon", src=linksUrl[1]+icon, alt="Nivel de dificultad: "+d)
+     p=d
     div(class="m-box__stage "+cBg)
      p.a-box__stage=status
 
@@ -39,3 +40,21 @@ mixin nameFaq(id="faq1", n="pregunta")
   span=n
   .a-iconFaq
    .a-iconFaq__icon
+
+mixin mailChimp(f="", b="", m="", btnMail="-btnEmail")
+ // Begin Mailchimp Signup Form
+ .m-heroContent__form#mc_embed_signup
+  form(action="https://wordpress.us20.list-manage.com/subscribe/post?u=68ed75b9eb9fe8437811c24ba&amp;id=551de88e2a", method="post", id="mc-embedded-subscribe-form", name="mc-embedded-subscribe-form", class="validate", target="_blank", novalidate)
+   div(class="a-heroContent__form "+f)#mc_embed_signup_scroll
+    div(class="a-mailchimpGroup mc-field-group "+b)
+     input(type="email", placeholder="Escribe tu email aquí", value="", name="EMAIL", class="required email a-mailchimpMail "+m, id="mce-EMAIL")
+    .clear#mce-responses
+     div(class="response" id="mce-error-response" style="display:none")
+     div(div class="response" id="mce-success-response" style="display:none")
+    div(style="position: absolute; left: -5000px;" aria-hidden="true")
+     input(type="text" name="b_68ed75b9eb9fe8437811c24ba_551de88e2a" tabindex="-1" value="")
+    .clear
+     input(type="submit" value="Enviar" name="subscribe" id="mc-embedded-subscribe" class="button "+btnMail)
+
+mixin footerLink(lin=linksUrl[1],acl="",pr="Link")
+ li: a(href=""+lin, class="a-footerLink "+acl)=pr

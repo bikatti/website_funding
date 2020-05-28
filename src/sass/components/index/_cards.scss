@@ -94,7 +94,7 @@
         margin-left: $spaceXs;
         margin-right: $spaceXs;
         flex-direction: column;
-        width: 280px;
+        width: 260px;
         border-radius: 8px;
     }
     &:hover {
@@ -118,7 +118,7 @@
         text-align: center;
         &.-course {
             text-align: left;
-            padding-bottom: 2px;
+            padding-bottom: 8px;
         }
     }
     &__img {
@@ -226,18 +226,19 @@
 
 .m-box__details {
     display: flex;
-    margin-top: $spaceXs;
+    margin-top: $spaceMd;
     width: 100%;
     align-items: flex-end;
     justify-content: space-between;
-    .m-box__profile {
-        display: flex;
-        align-items: center;
-    }
-    .m-box__profileImg {
-        margin-right: 5px;
-    }
-    
+}
+
+.m-box__profile {
+    display: flex;
+    flex-direction: row;
+    // margin-top: $spaceXs;
+}
+.m-box__profileImg {
+    margin-right: 5px;
 }
 
 .m-box__stage {

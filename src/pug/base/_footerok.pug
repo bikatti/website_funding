@@ -1,0 +1,35 @@
+//- Footer
+.o-footerContent.-padSmTopBottom
+ .m-footer.-ContainerUniversal
+  .m-footer__logo
+   img(src=linksUrl[1]+"assets/img/logo/imagotipo_yogaiskra_white.png", alt="")
+  .m-footer__us
+   h3 #{titles[9]}
+   ol.m-listFooter
+    +footerLink(linksUrl[1]+linksInternos[0],"", titles[1])
+    +footerLink(linksUrl[1]+"#podcastTalk","", titles[2])
+    +footerLink(linksUrl[1]+linksInternos[4],"", titles[3])
+    +footerLink(linksUrl[1]+linksInternos[1],"", titles[4])
+  .m-footer__course
+   h3 #{titles[3]}
+   ol.m-listFooter
+    +footerLink(linksUrl[1]+linksInternos[6],"", "Iniciación en el Ashtanga Yoga")
+    +footerLink(linksUrl[1]+linksInternos[5],"", "Encendiendo el fuego interno")
+    +footerLink(linksUrl[1]+linksInternos[5],"", "Fluyendo y depurando la base")
+    +footerLink(linksUrl[1]+linksInternos[5],"", "Integrando y sellando la energía")
+  .m-footer__article
+   h3 #{titles[10]}
+   ol.m-listFooter
+    +footerLink(linksUrl[1]+linksInternos[3],"", "Podemos mejorar y ayudar")
+    +footerLink(linksUrl[1]+linksInternos[2],"", "Sobre el Ashtanga Yoga")
+  .m-footer__subs
+   h3 Subscribete a nuestro newsletter
+   +mailChimp("-footer", "", "-footer", "-btnFooter")
+   h3 Puedes apoyarnos por:
+   .m-footer__things
+    a(href=linksExternos[3], class="a-footerIcons"): img(src=linksUrl[1]+"assets/img/icons/f_instagram_w.svg", alt="")
+    a(href=linksExternos[4], class="a-footerIcons"): img(src=linksUrl[1]+"assets/img/icons/f_youtube_w.svg", alt="")
+    a(href=linksExternos[2], class="a-footerIcons"): img(src=linksUrl[1]+"assets/img/icons/f_patreon_w.svg", alt="")
+    a(href=linksExternos[0], class="a-footerIcons"): img(src=linksUrl[1]+"assets/img/icons/f_wordpress_w.svg", alt="")
+  .m-footer__copy
+   p Copyright © 2020 Yogaiskra | #[i.a-world] #[a(href=linksUrl[1]) Español ]

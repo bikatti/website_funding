@@ -25,7 +25,12 @@
 }
 
 .o-footer {
-    background-color: $color-primary;
+    background: linear-gradient(90deg, $color-primary 0%, rgba(82,38,144,1) 41%, rgba(86,45,150,1) 69%, rgba(99,69,169,1) 86%, $color-secondary 100%);
+    position: relative;
+    overflow: hidden;
+    @include mediaQueriesSm {
+        background: linear-gradient(90deg, rgba(72,19,128,1) 0%, rgba(82,38,144,1) 17%, rgba(116,100,194,1) 100%);
+    }
 }
 
 
@@ -46,6 +51,132 @@
     @include mediaQueriesXs {
         p {
             font-size: $fontS1;
+        }
+    }
+}
+
+.m-footer {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 2fr) 30%;
+    grid-template-rows: auto auto 10%;
+    grid-template-areas: "logoFooter logoFooter logoFooter logoFooter" "usFooter courFooter artiFooter subsFooter" "copyFooter copyFooter copyFooter copyFooter";
+    grid-gap: 0 $spaceXs;
+    border-bottom: 1px solid $color-lightin;
+    h3, p, a {
+        color: $color-lightgrey;
+    }@include mediaQueriesLg {
+        grid-template-columns: 1fr 2fr 1fr 40%;
+    }
+    @include mediaQueriesMd {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "logoFooter" "subsFooter" "copyFooter";
+        grid-gap: $spaceMd 0;
+        justify-content: start;
+    }
+    @include mediaQueriesXs {
+        grid-gap: $spaceRg 0;
+    }
+}
+.m-footer__logo {
+    grid-area: logoFooter;
+    margin-bottom: $spaceRg;
+    padding-right: $spaceXs;
+    margin-right: auto;
+    margin-left: auto;
+    img {
+        width: 350px;
+    }
+    @include mediaQueriesMd {
+        margin-bottom: 0;
+    }
+    @include mediaQueriesXs {
+        padding-right: 0;
+        img {
+            width: 280px;
+        }
+    }
+}
+.m-footer__us {
+    grid-area: usFooter;
+    @include mediaQueriesMd {
+        display: none;
+    }
+}
+.m-footer__course {
+    grid-area: courFooter;
+    @include mediaQueriesMd {
+        display: none;
+    }
+}
+.m-footer__article {
+    grid-area: artiFooter;
+    @include mediaQueriesMd {
+        display: none;
+    }
+}
+.m-footer__subs {
+    grid-area: subsFooter;
+    @include mediaQueriesMd {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        h3 {
+            margin-top: $spaceSm;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+.m-footer__copy {
+    grid-area: copyFooter;
+    padding-bottom: $spaceXs;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .a-world {
+        position: relative;
+        top: 4px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    @include mediaQueriesMd {
+        justify-content: center;
+    }
+}
+.m-footer__things {
+    display: flex;
+    margin-top: 5px;
+    flex-direction: row;
+    @include mediaQueriesMd {
+        justify-content: center;
+    }
+}
+.a-footerIcons {
+    width: 70px;
+    img {
+        width: 100%;
+    }
+}
+
+.o-footerDeco {
+    .a-thingsLeft {
+        position: absolute;
+        width: 230px;
+        bottom: -$spaceBg;
+    }
+    @include mediaQueriesSm {
+        .a-thingsLeft {
+            left: -$spaceMd;
+        }
+    }
+    @include mediaQueriesXs {
+        .a-thingsLeft {
+            left: -80px;
         }
     }
 }

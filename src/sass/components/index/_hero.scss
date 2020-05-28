@@ -102,10 +102,22 @@
     input {
         font-size: 20px;
     }
+    &.-footer {
+        margin-top: $spaceXs;
+        margin-bottom: $spaceXs;
+        input {
+            font-size: $fontSM5;
+        }
+    }
     @include mediaQueriesXs {
         justify-content: center;
         input {
             font-size: $fontSM2;
+        }
+        &.-footer {
+            input {
+                font-size: $fontSM2;
+            }
         }
     }
     @include mediaQueriesXxs {
@@ -129,6 +141,10 @@
     &:focus {
         outline: none;
         border-color: $color-secondary;
+    }
+    @include mediaQueriesXs {
+        width: 190px;
+        padding-right: 5px;
     }
 }
 
@@ -160,7 +176,6 @@
         right: -$spaceSm;
         width: 30%;
         z-index: 0;
-        content: url('../img/icons/things_right.svg');
     }
     .a-thingsLeft {
         position: absolute;
@@ -168,7 +183,6 @@
         left: -$spaceSm;
         width: 30%;
         z-index: 0;
-        content: url('../img/icons/things_left.svg');
     }
     @include mediaQueriesLg {
         .a-thingsRight {

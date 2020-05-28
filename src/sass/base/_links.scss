@@ -117,3 +117,11 @@ a.-LinkFaq {
         color: $color-primary;
     }
 }
+
+.a-footerLink {
+    color: $color-lightin;
+    &:hover {
+        color: $color-lightgrey;
+        border-bottom: 1px dashed $color-lightgrey;
+    }
+}
