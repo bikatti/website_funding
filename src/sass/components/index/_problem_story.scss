@@ -1,6 +1,14 @@
 .o-problemStory {
     position: relative;
     box-sizing: border-box;
+    &.-course {
+        z-index: 5;
+    }
+    @include mediaQueriesMd {
+        &.-course {
+            padding-bottom: 0;
+        }
+    }
 }
 
 .o-problemStory__content {
@@ -30,13 +38,13 @@
         &Right {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto;
-            grid-gap: $spaceSm 0;
+            grid-gap: $spaceMd 0;
             grid-template-areas: "problemContent" "problemImg";
         }
         &Left {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto;
-            grid-gap: $spaceRg 0;
+            grid-gap: $spaceMd 0;
             grid-template-areas: "explainContent" "explainImg";
         }
     }
@@ -46,7 +54,7 @@
     grid-area: problemImg;
     margin: auto;
     margin-left: 0;
-    width: 88%;
+    width: 91%;
     img {
         width: 100%;
     }
@@ -112,8 +120,6 @@
 .a-problemSubtitle, .a-explainSubtitle {
     display: flex;
     align-items: center;
-    position: relative;
-    top: -5px;
     &__text {
         font-style: italic;
     }
@@ -125,7 +131,6 @@
         background-color: $color-primary;
     }
     @include mediaQueriesSm {
-        position: static;
         padding-top: 5px;
     }
     @include mediaQueriesXs {
@@ -143,6 +148,9 @@
     position: relative;
     padding-top: $spaceXs;
     padding-bottom: $spaceSm;
+    .-top {
+        margin-top: $spaceXs;
+    }
     p {
         padding-bottom: $spaceXs;
         &:last-child {
@@ -152,4 +160,9 @@
     @include mediaQueriesLg {
         padding-top: $spaceSm;
     }
+}
+
+.-borderRadius {
+    border-radius: $spaceXs;
+    box-shadow: 5px 8px 16px .5px $color-grey;
 }

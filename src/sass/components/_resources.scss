@@ -18,10 +18,12 @@
     @include mediaQueriesLg {
         left: auto;
         right: -60px;
-        width: 156%;
+        width: 186%;
     }
     @include mediaQueriesMd {
         width: 250%;
+        right: -370px;
+        top: 260px;
         .-errorBg & {
             top: 0;
             right: -10px;
@@ -31,6 +33,7 @@
     @include mediaQueriesSm {
         width: 350%;
         right: -170px;
+        top: 540px;
         .-errorBg & {
             top: -50px;
             right: -80px;
@@ -40,7 +43,7 @@
     @include mediaQueriesXs {
         width: 550%;
         right: -370px;
-        top: 180px;
+        top: 620px;
         .-errorBg & {
             top: -50px;
             right: -40px;
@@ -48,8 +51,8 @@
         }
     }
     @include mediaQueriesXxs {
-        top: 180px;
         width: 680%;
+        top: 680px;
         right: -420px;
     }
 }

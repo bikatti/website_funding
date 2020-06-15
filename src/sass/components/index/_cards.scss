@@ -6,11 +6,6 @@
     &.-course {
         z-index: 5;
     }
-    @include mediaQueriesSm {
-        &.-course {
-            padding-top: 100px;
-        }
-    }
 }
 
 .m-cardTitle {
@@ -22,7 +17,7 @@
     text-align: center;
     .a-problemSubtitle {
         padding-top: 6px;
-        width: 56%;
+        width: 66%;
     }
     @include mediaQueriesLg {
         .a-problemSubtitle {
@@ -30,7 +25,10 @@
         }
     }
     @include mediaQueriesMd {
-        width: 90%;
+        width: 100%;
+        .a-problemSubtitle__text {
+            font-size: $fontS2;
+        }
         .a-problemSubtitle {
             width: 100%;
         }
@@ -58,6 +56,9 @@
     @include mediaQueriesSm {
         align-items: center;
         flex-direction: column;
+        .m-explainImg & {
+            max-width: 100%;
+        }
     }
 }
 
@@ -94,7 +95,7 @@
         margin-left: $spaceXs;
         margin-right: $spaceXs;
         flex-direction: column;
-        width: 260px;
+        width: 270px;
         border-radius: 8px;
     }
     &:hover {
@@ -191,6 +192,9 @@
     width: 100%;
     height: 150px;
     margin-bottom: $spaceXs;
+    .-course & {
+        height: auto;
+    }
 }
 .a-course__img {
     width: 100%;
@@ -226,7 +230,7 @@
 
 .m-box__details {
     display: flex;
-    margin-top: $spaceMd;
+    margin-top: $spaceRg;
     width: 100%;
     align-items: flex-end;
     justify-content: space-between;

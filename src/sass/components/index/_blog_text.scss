@@ -37,6 +37,7 @@
     @include mediaQueriesXs {
         width: 100%;
         &.-md {
+            max-width: 96%;
             padding-top: 0;
             padding-bottom: 0;
         }
@@ -74,4 +75,25 @@
         // text-decoration: underline dashed;
         border-bottom: 1px dashed $color-grey;
     }
+}
+
+.a-explainButton {
+    @include mediaQueriesMd {
+        text-align: center;
+    }
+    @include mediaQueriesXs {
+        .-fillSecondary {
+            padding: 8px 32%;
+        }
+    }
+    @include mediaQueries0 {
+        .-fillSecondary {
+            padding: 8px 30%;
+        }
+    }
+}
+
+.m-listContent.-arrow li a {
+    display: flex;
+    align-items: center;
 }

@@ -15,8 +15,14 @@ html(lang="es")
   include components/donate/_hero.pug
 
   // explained
-  include components/donate/_text.pug
-  include components/donate/_explain.pug
+  .-ContainerUniversal
+   include components/donate/_problem.pug
+   include components/donate/_text.pug
+  
+
+  // cards
+  include components/index/_cards.pug
+  .-padBgBottom
 
   // footer
   include base/_footer.pug

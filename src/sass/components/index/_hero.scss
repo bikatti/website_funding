@@ -1,12 +1,7 @@
-// .-index
 .o-hero {
     position: relative;
     padding-top: $spaceMd;
     padding-bottom: $spaceMd;
-    @include mediaQueriesMd {
-        padding-top: $spaceRg;
-        padding-bottom: $spaceRg;
-    }
     &.-alert {
         background-color: $color-primary;
     }
@@ -14,6 +9,23 @@
         padding-top: 80px;
         padding-bottom: 80px;
         background-color: $color-calm;
+    }
+    &.-course {
+        height: 450px;
+        display: flex;
+        background-color: $color-secondary;
+    }
+    @include mediaQueriesMd {
+        padding-top: $spaceRg;
+        padding-bottom: $spaceRg;
+        &.-course {
+            height: auto;
+        }
+    }
+    @include mediaQueriesXs {
+        &.-index {
+            padding-top: $spaceXs;
+        }
     }
 }
 
@@ -34,7 +46,7 @@
         justify-content: center;
     }
     @include mediaQueriesXs {
-        grid-gap: $spaceMd 0;
+        grid-gap: $spaceXs 0;
         grid-template-columns: 100%;
     }
 }
@@ -54,7 +66,7 @@
 }
 .a-heroContent__title {
     max-width: 90%;
-    padding-bottom: $spaceSm;
+    padding-bottom: $spaceXs;
     h1 {
         color: $color-primary;
     }
@@ -86,12 +98,7 @@
     }
     @include mediaQueriesXs {
         .-wierdPrimary {
-            padding: 8px 33%;
-        }
-    }
-    @include mediaQueriesXxs {
-        .-wierdPrimary {
-            padding: 8px 36%;
+            padding: 8px 30%;
         }
     }
 }
@@ -145,15 +152,45 @@
     @include mediaQueriesXs {
         width: 190px;
         padding-right: 5px;
+        padding-left: 8px;
     }
 }
 
 .m-heroContent__img {
     grid-area: imgHero;
     margin: auto;
+    position: relative;
     img {
         width: 100%;
+        position: relative;
+        z-index: 1;
     }
+    .a-circleLinesW {
+        width: 200px;
+        position: absolute;
+        bottom: -30px;
+        z-index: 0;
+    }
+    .a-squarePointsW {
+        width: 200px;
+        position: absolute;
+        top: 0;
+        right: -20px;
+        z-index: 0;
+    }
+    @include mediaQueriesXs {
+        .a-circleLinesW {
+            width: 150px;
+            left: -28px;
+        }
+        .a-squarePointsW {
+            width: 150px;
+        }
+    }
+}
+.m-heroContentImg {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -205,8 +242,8 @@
         .a-thingsRight {
             // width: 75%;
             top: auto;
-            bottom: -100px;
-            right: -$spaceSm;
+            bottom: -120px;
+            right: -$spaceRg;
         }
         .a-thingsLeft {
             // width: 75%;

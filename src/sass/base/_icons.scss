@@ -62,6 +62,12 @@
     margin-right: 3px;
 }
 
+.a-patreon {
+    width: 26px;
+    content: url('../img/icons/patreon_logo.svg');
+    margin-right: 3px;
+}
+
 .o-buttonBookmark {
     position: fixed;
     right: $spaceRg;
@@ -105,7 +111,24 @@
 }
 
 .a-mobile {
+    width: 15px;
     content: url('../img/icons/mobile.svg');
+}
+
+.a-pagoMobil {
+    width: $spaceRg;
+    content: url('../img/icons/pago_movil.svg');
+}
+
+.a-zelle {
+    width: $spaceRg;
+    content: url('../img/icons/zelle.png');
+}
+
+.a-airtm {
+    width: $spaceRg;
+    margin-right: 5px;
+    content: url('../img/icons/airtm.png');
 }
 
 .a-info {
@@ -143,6 +166,13 @@
 .a-thingsLeft {
     content: url('../img/icons/things_left.svg');
 }
+.a-circleLinesW {
+    content: url('../img/icons/circle_lines_w.svg');
+}
+.a-squarePointsW {
+    content: url('../img/icons/square_points_w.svg');
+}
+
 .a-world {
     content: url('../img/icons/world.svg');
 }

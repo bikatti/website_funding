@@ -10,7 +10,8 @@
     }
     @include mediaQueriesMd {
         &.-coursePage {
-            padding-bottom: 100px;
+            padding-top: $spaceXs;
+            padding-bottom: $spaceMd;
         }
     }
 }
@@ -113,12 +114,12 @@
     }
     @include mediaQueriesMd {
         .-coursePage & {
-            grid-gap: $spaceBg 0;
+            grid-gap: $spaceRg 0;
         }
     }
 }
 
-.m-heroContent__release {
+/* .m-heroContent__release {
     display: flex;
     margin-right: auto;
     margin-left: auto;
@@ -139,7 +140,7 @@
             width: $spaceMd;
         }
     }
-}
+} */
 .a-heroContent__time {
     margin-right: 5px;
 }

@@ -152,12 +152,22 @@
     display: flex;
     margin-top: 5px;
     flex-direction: row;
+    align-items: center;
     @include mediaQueriesMd {
         justify-content: center;
     }
 }
 .a-footerIcons {
-    width: 70px;
+    width: 50px;
+    margin-left: $spaceXs;
+    &:first-child {
+        width: 45px;
+        margin-left: 0;
+    }
+    &:last-child {
+        width: 60px;
+        margin-left: 5px;
+    }
     img {
         width: 100%;
     }
