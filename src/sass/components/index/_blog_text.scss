@@ -93,7 +93,8 @@
     }
 }
 
-.m-listContent.-arrow li a {
+.m-listContent.-arrow li a,
+.m-listContent.-arrow li p {
     display: flex;
     align-items: center;
 }
