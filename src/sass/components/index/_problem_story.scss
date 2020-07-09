@@ -47,6 +47,9 @@
             grid-gap: $spaceMd 0;
             grid-template-areas: "explainContent" "explainImg";
         }
+        .-course &Left {
+            grid-template-areas: "explainImg" "explainContent";
+        }
     }
 }
 
