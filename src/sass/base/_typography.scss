@@ -165,7 +165,7 @@ ol {
     }
 }
 
-.a-donateItem {
+.a-donateItem.-donate {
     @include mediaQueriesMd {
         margin-bottom: 10px;
         a {
@@ -178,4 +178,8 @@ ol {
 // Text Align
 .-left {
     text-align: left !important;
+}
+
+.-line {
+    text-decoration: solid underline $color-primary;
 }

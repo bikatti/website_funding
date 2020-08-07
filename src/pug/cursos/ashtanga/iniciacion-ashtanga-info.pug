@@ -1,0 +1,27 @@
+include ../../lib/_var.pug
+include ../../lib/_mixin.pug
+<!DOCTYPE html>
+html(lang="es")
+ include ../../base/_head_curse.pug
+  meta(name="title", content="Iniciación en el Ashtanga Yoga "+ titles[0])
+  meta(name="description", content="Cursos sorportados por donaciones. Primer curso de de cuatro, Introducción al Ashtanga yoga.")
+  title Iniciación en el Ashtanga Yoga - #{titles[0]}
+ body.o-Hidden
+
+  // menu
+  include ../../base/_header.pug
+
+  // hero
+  include ../../components/cursos/iniciacion-ashtanga/info/_hero.pug
+
+  // lines and content
+  .o-contentCourse.-padMdTopBottom
+   .o-line.m-contentCourse.-ContainerUniversal
+    include ../../components/cursos/iniciacion-ashtanga/info/_left.pug
+    include ../../components/cursos/iniciacion-ashtanga/info/_meta_right.pug
+
+  //info
+  include ../../components/cursos/iniciacion-ashtanga/info/_faq.pug
+
+  // footer
+  include ../../base/_footer.pug

@@ -47,7 +47,7 @@ section .a-noMargin {
 }
 
 section .a-noPadding, .a-noPadding {
-    padding: 0;
+    padding: 0 !important;
 }
 
 .-d-none {
@@ -83,6 +83,11 @@ section .a-paddingMd {
     padding-bottom: $spaceSm;
 }
 
+.-padXsTopBottom {
+    padding-top: $spaceXs;
+    padding-bottom: $spaceXs;
+}
+
 .-padBgBottom {
     padding-bottom: 80px;
     @include mediaQueriesMd {
@@ -92,9 +97,6 @@ section .a-paddingMd {
 
 .-padMdBottom {
     padding-bottom: $spaceMd;
-    @include mediaQueriesMd {
-        padding-bottom: $spaceMd;
-    }
 }
 
 .-padBgTop {
@@ -106,16 +108,14 @@ section .a-paddingMd {
 
 .-padMdTop {
     padding-top: $spaceMd;
-    @include mediaQueriesMd {
-        padding-top: $spaceMd;
-    }
 }
 
 .-padSmTop {
     padding-top: $spaceSm;
-    @include mediaQueriesMd {
-        padding-top: $spaceSm;
-    }
+}
+
+.-padXsTop {
+    padding-top: $spaceXs;
 }
 
 .-containerText {

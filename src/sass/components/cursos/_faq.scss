@@ -41,6 +41,10 @@ ol.faq-list {
     li {
         border-bottom: $borderBottom;
         position: relative;
+        & li {
+            border: none;
+            position: static;
+        }
         &::marker {
             visibility: visible;
         }

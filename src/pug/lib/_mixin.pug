@@ -1,10 +1,10 @@
 
 //- Contenido del index
-mixin box(a="#", t="_self", img="assets/img/icons/arrow_right.svg", n="", title="Box con texto", texto="Texto de la card")
+mixin box(a="#", t="_self", img="assets/img/icons/arrow_right.svg", title="Box con texto", texto="Texto de la card")
  a(class="m-box m-box__anima", href=""+a, target=""+t)
   .m-box__container
    h3.m-box__title.a-explainTitle=title
-   img(class="m-box__img", src=""+img, alt=""+n)
+   img(class="m-box__img", src=""+img, alt="Icono de "+title)
    p.a-box__text=texto
 
 mixin boxCourse(a="#", img, n, tipo="Curso", title="Curso de ...", icon, d, texto="Hey!! aqui va descripción", pro, profe, cBg, status="Fácil")
