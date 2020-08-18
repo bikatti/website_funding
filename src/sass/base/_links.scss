@@ -116,6 +116,30 @@ a.-LinkFaq {
         color: $color-primary;
     }
 }
+.m-linksList {
+    padding-left: 0;
+    position: relative;
+    width: 100%;
+    li {
+        list-style: none;
+        display: flex;
+        border-radius: 4px;
+        padding-bottom: 0;
+        transition: background 120ms ease-in 0s;
+    }
+    a {
+        display: flex;
+        padding: 4px;
+        text-overflow: ellipsis;
+        max-width: 95%;
+        overflow: hidden;
+    }
+    li:hover {
+        background: $color-lightgrey;
+        color: $color-darkengrey;
+        cursor: pointer;
+    }
+}
 
 .a-footerLink {
     color: $color-lightin;

@@ -1,0 +1,72 @@
+.m-metaInfo__div {
+    padding: 20px;
+    margin-bottom: $spaceRg;
+}
+
+.-box {
+    border-radius: 4px;
+    box-shadow: $shadow1;
+}
+.m-metaInfo__icon {
+    max-width: $spaceMd;
+    padding-bottom: $spaceXs;
+}
+.m-metaInfo__header {
+    display: flex;
+    align-items: center;
+    img {
+        max-width: $spaceMd;
+        margin-right: $spaceSm;
+    }
+    @include mediaQueriesSm {
+        align-items: flex-start;
+        &Details h2 {
+            margin-bottom: $spaceXs;
+        }
+    }
+}
+.m-metaInfo__details {
+    display: flex;
+    align-items: center;
+    .a-easy, .a-clock {
+        width: $spaceXs;
+        margin: 0 5px;
+    }
+    .a-clock {
+        margin-left: $spaceSm;
+    }
+    @include mediaQueriesSm {
+        justify-content: center;
+    }
+}
+.m-metaInfo__videosTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.m-metaInfo__profileImg {
+    width: $spaceRg;
+    margin: 0 $spaceXs;
+    @include mediaQueriesSm {
+        width: 30px;
+        margin: 0 calc(#{$spaceXs} / 2);
+    }
+    @include mediaQueries0 {
+        width: $spaceSm;
+    }
+}
+.m-metaInfo__profile {
+    display: flex;
+    align-items: center;
+}
+
+.a-course__profile {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.m-metaInfo__text {
+    ul {
+        padding: calc(#{$spaceXs} / 2);
+    }
+}

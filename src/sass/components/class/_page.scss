@@ -1,0 +1,17 @@
+.o-pageVideo {
+    @include mediaQueriesMd {
+        padding-top: 0;
+    }
+}
+.o-pageClass {
+    box-sizing: border-box;
+    z-index: -1;
+    background: linear-gradient(160deg, $color-calm 0%, $color-alert 100%);;
+    .m-pageClass__hero {
+        height: 160px;
+        width: 100%;
+    }
+    @include mediaQueriesSm {
+        display: none;
+    }
+}

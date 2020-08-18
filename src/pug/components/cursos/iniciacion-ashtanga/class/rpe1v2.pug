@@ -1,0 +1,26 @@
+section.o-pageClass.-pRelative.-noScroll.-bgCalm
+ .m-pageClass__hero
+
+section.o-videoClass.-pRelative
+ .m-boxClass.-box
+  +videoClass("https://www.youtube.com/embed/lA9-R62HpQ0")
+  
+  +detailsClass(linksUrl[1]+linksCursos[0],"2. "+crpe[1],linksUrl[1]+lkCourseIa[0],"",linksUrl[1]+lkCourseIa[7],"","Siguiente")
+  
+  // Description
+  .m-boxClass__description.-padSmNow
+   p Las posturas como una de las técnicas del Yoga. Las 8 ramas del Ashtanga Yoga. Qué se entiende por asana (posturas de yoga). Beneficios de la práctica de posturas. Objetivo de la práctica de posturas. La dificultad y el dolor asociado a la práctica de posturas.
+   //-.m-boxClass__download
+    h3 Recursos
+    ul.m-linksList.-marXsTop
+     li.-pRelative: a.-download(href="#") Guía entera del curso PDF
+  
+  // Contenido del video
+  .o-faqCourse.-marXsTop.-padSmNow
+   .m-faqContent
+    div(class="o-article__wrapper", data-artucle-title="overview")
+     div(class="tab-pane fade show active", id="pills-home" role="tabpanel", aria-labelledby="pills-home-tab")
+      ol(class="wow fadeInUp faq-list -faqClass", style="visibility: visible; animation-name: fadeInUp;")
+       li
+        +nameFaq("faq2","Escrito con el contenido del video")
+        include rpe1t1/_t2.pug

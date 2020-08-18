@@ -119,28 +119,6 @@
     }
 }
 
-/* .m-heroContent__release {
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    justify-content: center;
-    padding-top: $spaceXs;
-    padding-bottom: $spaceXs;
-    border-radius: 10px;
-    box-shadow: $shadow1;
-    width: 380px;
-    background-color: $color-lightin;
-    .a-heroContent__text {
-        padding: 0;
-    }
-    @include mediaQueriesXs {
-        width: 100%;
-        .a-calendar {
-            width: $spaceMd;
-        }
-    }
-} */
 .a-heroContent__time {
     margin-right: 5px;
 }
@@ -183,7 +161,6 @@
 .m-heroCourse__video {
     position: relative;
     padding-bottom: 52.25%;
-    // z-index: 5;
     .a-heroContent__youtube {
         position: absolute;
         z-index: 5;

@@ -3,9 +3,18 @@ include ../lib/_mixin.pug
 <!DOCTYPE html>
 html(lang="es")
  include ../base/_head.pug
-  meta(name="title", content=titles[0]+" - website de donación para el proyecto de yoga sobre filosofía y yoga ashtanga totalmente online")
-  title #{titles[0]} - Clases y conocimiento sobre en el yoga. Queremos que seas una mejor persona
- body.o-colorIndex
+  meta(name="og:title", content="Sobre el Ashtanga Yoga")
+  meta(name="og:description", content="En todas las épocas y lugares, hemos contado con enseñanzas y prácticas para el mejoramiento humano. Algunos han llamado a estos conocimientos la Corriente de Energía Despierta")
+  meta(name="og:url", content="https://yogaiskra.com/info/ashtanga-yoga")
+  meta(name="og:type", content="article")
+  meta(name="article:publisher", content="https://www.facebook.com/yogaiskra/")
+  meta(name="article:published_time", content="2020-07-16T13:12:54+00:00")
+
+  meta(name="title", content="Sobre el Ashtanga Yoga")
+  meta(name="description", content="En todas las épocas y lugares, hemos contado con enseñanzas y prácticas para el mejoramiento humano. Algunos han llamado a estos conocimientos la Corriente de Energía Despierta")
+  title Sobre el Ashtanga Yoga
+
+ body.o-colorIndex.-menuSticky
 
   // menu
   include ../base/_header.pug

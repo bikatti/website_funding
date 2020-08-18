@@ -1,0 +1,39 @@
+section.o-metaVideos
+ .m-metaInfo__div.-box.-bgLight
+  .m-metaInfo__header
+   img(src=linksUrl[1]+"assets/img/icons/yoga_symbol_wierd.svg", alt="Icono del símbolo OM")
+   .m-metaInfo__headerDetails
+    p.-bold #{typesCourse[0]} 1
+    h1.-headerClass.a-problemTitle #{nameCourse[0]}
+    .m-metaInfo__profile
+     p.-bold Profesora:
+     .m-metaInfo__profileImg
+      img(class="a-course__profile", src=linksUrl[1]+"assets/img/profesora/profe_yogaiskra.png", alt="Yogaiskra")
+     p.-bold Yogaiskra
+  
+  .a-border.-padXsTopBottom
+   .-borderBottom
+  
+  .m-metaInfo__details
+   .a-easy
+   p #{levels[3]}
+   .a-clock
+   p 3 horas y 18 minutos
+
+ .m-metaInfo__div.-box.-bgLight
+  .m-metaInfo__videos.-padSmBottom
+   .m-metaInfo__videosTitle
+    h2.-bold Contenido
+   .m-aboutCourse__things.-padSmTop
+    .m-contentTimeline
+     .a-lineRect
+    .m-contentExplain
+     +materialVideo("",linksUrl[1]+"assets/img/rpe1/curso1_video1_portada.png","a-play",linksUrl[1]+lkCourseIa[0], "1. "+crpe[0], "13")
+     +materialVideo("",linksUrl[1]+"assets/img/rpe1/curso1_video2_portada.png","a-play",linksUrl[1]+lkCourseIa[1], "2. "+crpe[1], "24")
+     +materialVideo("-dNone",linksUrl[1],"a-playDisabled","#", "3. "+crpe[2], "16")
+     +materialVideo("-dNone",linksUrl[1],"a-playDisabled","#", "4. "+crpe[3], "25")
+     +materialVideo("-dNone",linksUrl[1],"a-playDisabled","#", "5. "+crpe[4], "35")
+     +materialVideo("-dNone",linksUrl[1],"a-playDisabled","#", "6. "+crpe[5], "15")
+     +materialVideo("-dNone",linksUrl[1],"a-playDisabled","#", "7. "+crpe[6], "40")
+     +materialVideo("-dNone",linksUrl[1],"a-document",linksUrl[1]+lkCourseIa[7], crpe[7], "30")
+ 

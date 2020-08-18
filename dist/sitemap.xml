@@ -7,52 +7,45 @@
 
 <url>
   <loc>https://yogaiskra.com/</loc>
-  <lastmod>2020-08-05T21:20:54+00:00</lastmod>
+  <lastmod>2020-08-14T20:52:10+00:00</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://yogaiskra.com/acerca-de</loc>
-  <lastmod>2020-08-05T21:20:41+00:00</lastmod>
+  <lastmod>2020-08-14T20:52:07+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.5</priority>
 </url>
 <url>
   <loc>https://yogaiskra.com/curso</loc>
-  <lastmod>2020-08-05T21:20:45+00:00</lastmod>
+  <lastmod>2020-08-14T20:52:08+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
-  <loc>https://yogaiskra.com/donar</loc>
-  <lastmod>2020-08-05T21:20:49+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
-</url>
-<url>
-  <loc>https://yogaiskra.com/info/podemos-cambiar</loc>
-  <lastmod>2020-08-05T21:20:29+00:00</lastmod>
-  <changefreq>never</changefreq>
-  <priority>0.5</priority>
-</url>
-<url>
-  <loc>https://yogaiskra.com/info/ashtanga-yoga</loc>
-  <lastmod>2020-08-05T21:20:23+00:00</lastmod>
-  <changefreq>never</changefreq>
-  <priority>0.5</priority>
-</url>
-<url>
-  <loc>https://yogaiskra.com/cursos/iniciacion-ashtanga-info</loc>
+  <loc>https://yogaiskra.com/cursos-online/iniciacion-ashtanga-info</loc>
   <lastmod>2020-08-05T21:20:16+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
-  <loc>https://yogaiskra.com/cursos/error/no-found</loc>
-  <lastmod>2020-08-05T21:20:07+00:00</lastmod>
-  <changefreq>never</changefreq>
-  <priority>0.1</priority>
+  <loc>https://yogaiskra.com/donar</loc>
+  <lastmod>2020-08-14T20:52:09+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
 </url>
-
+<url>
+  <loc>https://yogaiskra.com/info/podemos-cambiar</loc>
+  <lastmod>2020-08-14T20:52:06+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://yogaiskra.com/info/ashtanga-yoga</loc>
+  <lastmod>2020-08-14T20:52:05+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.5</priority>
+</url>
 
 </urlset>

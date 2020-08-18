@@ -1,0 +1,25 @@
+.o-menuCourse.-dSmNone
+ span
+  .m-menuCourse__container
+   aside.m-menuCourse__nav
+    section.m-menuCourse__folded
+     +titleNavCourse(linksUrl[1]+linksCursos[0],linksUrl[1]+"assets/img/icons/yoga_symbol_wierd.svg","Icono del símbolo OM",0)
+
+     .m-menuCourse__navList
+      .m-menuCourse__itemsGroup
+       +titleConceptC("Contenido")
+       .m-menuCourse__materialList
+        +anchorItemNav(linksUrl[1]+lkCourseIa[0],"1. "+crpe[0])
+        +anchorItemNav(linksUrl[1]+lkCourseIa[1],"2. "+crpe[1])
+        //-+anchorItemNav(linksUrl[1]+lkCourseIa[2],"3. "+crpe[2])
+         +anchorItemNav(linksUrl[1]+lkCourseIa[3],"4. "+crpe[3])
+         +anchorItemNav(linksUrl[1]+lkCourseIa[4],"5. "+crpe[4])
+         +anchorItemNav(linksUrl[1]+lkCourseIa[5],"6. "+crpe[5])
+         +anchorItemNav(linksUrl[1]+lkCourseIa[6],"7. "+crpe[6])
+        +anchorItemNav(linksUrl[1]+lkCourseIa[7],crpe[7])
+
+
+    section.m-menuCourse__unfolded
+     .m-menuCourse__button#arrowNav
+      .-iconMenuArrow
+     .m-menuCourse__materials

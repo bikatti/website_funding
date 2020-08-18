@@ -1,4 +1,21 @@
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html
+<IfModule mod_rewrite.c>
+ RewriteEngine on
+ RewriteCond %{HTTP_HOST} ^www.yogaiskra.com [NC]
+ RewriteRule ^(.*)$ https://yogaiskra.com/$1 [L,R=301]
+ RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteCond %{REQUEST_FILENAME}\.html -f
+ RewriteRule ^(.*)$ $1.html
+</IfModule>
+<IfModule mod_expires.c>
+ ExpiresActive On
+ ExpiresDefault "access plus 1 day"
+</IfModule>
+<IfModule mod_expires.c>
+ AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/x-javascript
+</IfModule>
+Redirect 301 /cursos.html https://yogaiskra.com/curso
+Redirect 301 /cursos/iniciacion-ashtanga-info https://yogaiskra.com/cursos-online/iniciacion-ashtanga-info
+ErrorDocument 401 /error/no-access.html
+ErrorDocument 403 /error/no-found.html
+ErrorDocument 404 /error/no-found.html
+ErrorDocument 500 /error/no-found.html

@@ -1,0 +1,109 @@
+.o-menuCourse {
+    padding-left: $spaceRg;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+.m-menuCourse__nav {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+}
+.m-menuCourse__folded {
+    background-color: $color-lightin;
+    width: 250px;
+    overflow-y: scroll;
+    height: 100vh;
+    display: none;
+    transition: .9s;
+    &.-isActive {
+        display: block;
+    }
+}
+
+.m-menuCourse__unfolded {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    flex-direction: column;
+    background-color: $color-secondary;
+    max-width: $spaceRg;
+    .m-menuCourse__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        height: 60px;
+        background-color: darken($color-secondary, 12%);
+    }
+    .-iconMenuArrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.25s ease-in-out 0s;
+        &::before {
+            width: $spaceRg;
+            text-align: center;
+            content: url('../img/icons/arrow.svg');
+        }
+    }
+    &.-shadow {
+        box-shadow: 10px 0 20px rgba($color-darkgrey, $alpha: .5);
+        .-iconMenuArrow {
+            transform: rotate(180deg);
+        }
+    }
+}
+.-textNav {
+    font-size: $fontSM1;
+    color: $color-darkengrey;
+    font-weight: 400;
+}
+.a-titleCourse {
+    display: flex;
+    padding: calc(#{$spaceXs} / 2) $spaceXs;
+    min-height: $spaceMd;
+    .a-iconCourse {
+        width: $spaceRg;
+        margin-right: $spaceXs;
+    }
+    .-titleCourse {
+        font-weight: 700;
+        color: $color-primary;
+    }
+}
+
+.m-menuCourse__concept {
+    padding: calc(#{$spaceXs} / 2) $spaceXs;
+    min-height: $spaceMd;
+    display: flex;
+    align-items: center;
+    background-color: $color-verylightgrey;
+    .-titleConcept {
+        font-weight: 700;
+    }
+}
+
+.a-menuCourse__item {
+    padding: calc(#{$spaceXs} / 2) $spaceXs;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: $spaceMd;
+    border-bottom: 1px solid $color-grey;
+    .-textLinksMenu {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        max-width: 184px;
+        line-height: 1.4;
+        max-height: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

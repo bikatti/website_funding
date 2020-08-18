@@ -1,0 +1,104 @@
+.o-videoClass {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.m-boxClass {
+    width: 60vw;
+    background-color: $color-lightin;
+    position: relative;
+    bottom: 100px;
+    z-index: 15;
+    padding: $spaceSm;
+    @include mediaQueriesLg {
+        width: 80vw;
+    }
+    @include mediaQueriesMd {
+        width: 90vw;
+    }
+    @include mediaQueriesSm {
+        padding: 0;
+        box-shadow: none;
+        width: 100%;
+        bottom: auto;
+        margin-bottom: $spaceRg;
+        .-padSmNow {
+            padding-left:  $spaceSm;
+            padding-right: $spaceSm;
+        }
+    }
+}
+.m-boxClass__video {
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+    padding-bottom: 52.25%;
+    .a-boxClass__youtube {
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.m-boxClass__cPanel {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    grid-gap: 0 $spaceXs;
+    @include mediaQueriesSm {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-gap: $spaceXs;
+        .m-boxClass__buttons {
+            width: 100%;
+        }
+    }
+}
+.m-boxClass__buttons {
+    display: flex;
+    justify-content: flex-end;
+    .a-btn, .a-btn:active, .a-btn:focus {
+        .-arrowLeft {
+            &::before {
+                transform: scale(.9) rotate(180deg);
+                position: absolute;
+                top: 5px;
+                left: 10px;
+                content: url('../img/icons/arrow_right_white.svg');
+            }
+        }
+        .-arrowRight {
+            padding-left: 8px;
+            &::before {
+                transform: scale(.9);
+                position: absolute;
+                top: 10px;
+                left: $spaceXs;
+                content: url('../img/icons/arrow_right_white.svg');
+            }
+        }
+    }
+    .a-btn:hover {
+        .-arrowLeft {
+            &::before {
+                content: url('../img/icons/arrow_right_secondary.svg');
+            }
+        }
+        .-arrowRight {
+            &::before {
+                top: 8px;
+                left: 12px;
+                content: url('../img/icons/arrow_right.svg');
+            }
+        }
+    }
+    @include mediaQueriesSm{
+        justify-content: flex-start;
+    }
+}
+.m-boxClass__download {
+    display: flex;
+    flex-direction: column;
+}

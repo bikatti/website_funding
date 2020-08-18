@@ -1,19 +1,34 @@
 .m-contentCourse {
     display: grid;
     grid-template-columns: 62% 1fr;
-    grid-gap: 0 50px;
+    grid-gap: 0 $spaceMd;
+    &.-half {
+        grid-template-columns: 58% 1fr;
+    }
     @include mediaQueriesLg {
-        grid-template-columns: 55% 1fr;
+        &, &.-half {
+            grid-template-columns: 55% 1fr;
+        }
     }
     @include mediaQueriesMd {
-        grid-template-columns: 86%;
-        grid-template-rows: 1fr auto;
-        grid-gap: $spaceBg 0;
-        justify-content: center;
+        &, &.-half {
+            grid-template-columns: 86%;
+            grid-template-rows: 1fr auto;
+            grid-gap: $spaceBg 0;
+            justify-content: center;
+        }
+        &.-half {
+            grid-gap: $spaceXs 0;
+        }
     }
     @include mediaQueriesXs {
-        grid-gap: $spaceMd 0;
-        grid-template-columns: 100%;
+        &, &.-half {
+            grid-gap: $spaceMd 0;
+            grid-template-columns: 100%;
+        }
+        &.-half {
+            grid-gap: $spaceXs 0;
+        }
     }
 }
 
@@ -32,5 +47,14 @@
     @include mediaQueriesSm {
         position: static;
         padding-top: 5px;
+    }
+}
+.-headerClass {
+    font-size: $fontS4;
+    @include mediaQueriesMd {
+        font-size: $fontSM3;
+    }
+    @include mediaQueries0 {
+        font-size: $font02;
     }
 }

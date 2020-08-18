@@ -12,6 +12,23 @@
     }
 }
 
+.a-btn {
+    font-size: $fontS2;
+    border: none;
+    cursor: pointer;
+    min-height: 20px;
+    &:focus {
+        outline: none;
+    }
+    &__text {
+        max-width: 160px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        min-height: 20px;
+    }
+}
+
 .-btnMonlogo {
     margin-left: 8px;
     padding: 4px 20px;
@@ -32,6 +49,7 @@
     border-radius: $spaceSm;
     font-weight: 600;
     color: $color-primary;
+    background-color: transparent;
     &:hover {
         background-color: $color-primary;
         color: $color-lightin;
@@ -39,12 +57,6 @@
     &:active, &:focus {
         box-shadow: 0 0 0 3px $color-secondary;
     }
-    /* @include mediaQueriesMd {
-        padding: 3px 10px;
-        &:active, &:focus {
-            padding: 5px 10px;
-        }
-    } */
 }
 
 .-outlineSecondary {
@@ -87,6 +99,7 @@
 
 .-fillPrimary {
     @extend .-outlinePrimary;
+    padding: 6px 20px;
     background-color: $color-primary;
     color: $color-lightin;
     &:hover {

@@ -1,7 +1,9 @@
-h1, h2, h3, p, small, i, span, ol, li, ul {
+h1, h2, h3, p, small, i, span, ol, li, ul, div {
     font-family: $font2;
-    color: $color-darkengrey;
     line-height: 1.3;
+}
+h1, h2, h3, p, small, i, span, ol, li, ul {
+    color: $color-darkengrey;
 }
 
 // Titles
@@ -79,6 +81,12 @@ small, span {
 .-bold {
     font-weight: 500;
 }
+.-superbold {
+    font-weight: 600;
+}
+.-italic {
+    font-style: italic;
+}
 
 .-colorPrimary {
     color: $color-primary;
@@ -149,14 +157,14 @@ ol {
     }
     &.-bullet li {
         list-style: none;
-        margin-left: 10px;
+        margin-left: $spaceSm;
         &::before {
             width: 10px;
             height: 10px;
             display: block;
             position: absolute;
             margin-top: 7px;
-            left: -5px;
+            left: 5px;
             content: ' ';
             border-radius: 50%;
             transition: all .2s;
@@ -178,6 +186,9 @@ ol {
 // Text Align
 .-left {
     text-align: left !important;
+}
+.-center {
+    text-align: center !important;
 }
 
 .-line {

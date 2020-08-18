@@ -4,6 +4,9 @@
     max-width: 66%;
     margin-left: auto;
     margin-right: auto;
+    &.-faqClass {
+        max-width: 100%;
+    }
     @include mediaQueriesMd {
         max-width: 95%;
     }
@@ -19,9 +22,6 @@
 
 .faq-list a i {
     font-size: 1em;
-    /* position: absolute;
-    right: 0;
-    top: 20px; */
     content: "Hello";
 }
 
@@ -67,8 +67,11 @@ ol.faq-list {
     }
 }
 
-.faq-list p {
-    &:first-child {
-        padding-top: 5px;
+.faq-list {
+    p:first-child, h3:first-child {
+        padding-top: $spaceXs;
+    }
+    li li p:first-child, li li h3:first-child {
+        padding-top:0;
     }
 }

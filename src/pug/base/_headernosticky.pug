@@ -1,0 +1,24 @@
+nav.o-nav
+ .o-navFixedContainer
+  .o-nav__content
+   .a-brand
+    a(href=linksUrl[1]+linksCursos[0]): img.a-brand__Img(src=linksUrl[1]+logoResponsive[1], alt="Logo de yogaiskra")
+
+   .a-burguer#burger
+    img.a-burguer__menu(src=linksUrl[1]+"assets/img/icons/menu.svg", alt="Icono de menu")
+
+   .m-itemContent
+    .a-burguerOut#burgerOut
+     img.a-burguerOut__menu(src=linksUrl[1]+"assets/img/icons/cancel.svg", alt="Icono de cerrar el menu")
+    .a-brandMobile
+     a(href=linksUrl[1]+linksCursos[0]): img.a-brandMobile__Img(src=linksUrl[1]+logoResponsive[1], alt="Logo de yogaiskra")
+    ul.m-itemContent__list
+     li: a.a-itemLink(href=linksUrl[1]+linksCursos[0]) #{titles[3]}
+     li: a.a-itemLink(href="mailto:info@yogaiskra.com") #{titles[11]}
+    .a-button.a-noMargin
+     a.-outlinePrimary(href=linksUrl[1]) #{titles[13]}
+
+   .m-CallToAction
+    .a-button
+     a.-outlinePrimary(href=linksUrl[1]) #{titles[13]}
+    a.a-iconFund(href=linksUrl[1]): img.a-iconFund__img(src=linksUrl[1]+"assets/img/icons/door.png", alt="Icono de cerrar sesión")

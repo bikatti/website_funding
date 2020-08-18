@@ -58,3 +58,67 @@ mixin mailChimp(f="", b="", m="", btnMail="-btnEmail")
 
 mixin footerLink(lin=linksUrl[1],acl="",pr="Link")
  li: a(href=""+lin, class="a-footerLink "+acl)=pr
+
+
+//- Page cursos
+mixin materialVideo(noImg,img,i,a,t,min)
+ .m-materialVideo.m-contentCounter
+  .a-heyDot
+  a.m-materialVideo__content(href=""+a)
+   .m-materialVideo__video
+    .m-iconPlay
+      div(class=""+i)
+    .m-materialVideo__img
+     img(class=""+noImg,src=""+img, alt="Miniatura del video "+t)
+     .img
+   .m-materialVideo__header
+    p.m-materialVideo__title.-bold=t
+    .m-materialVideo__time
+     .a-clock
+     p #{min} min
+
+mixin titleNavCourse(a,img,alt,c)
+ a.a-titleCourse(href=a)
+  img.a-iconCourse(src=""+img, alt=""+alt)
+  .-titleCourse.-textNav #{nameCourse[c]}
+
+mixin titleConceptC(t)
+ .m-menuCourse__concept
+  .-titleConcept.-textNav=t
+
+mixin anchorItemNav(a,t)
+ a.a-menuCourse__item(href=""+a)
+  .-textLinksMenu.-textNav=t
+
+mixin videoClass(a)
+ .m-boxClass__videoContent.-pRelative
+  .m-boxClass__video
+   iframe(class="a-boxClass__youtube", src=""+a, frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+mixin detailsClass(aC,t,aBack,n1,aNext,n2,next)
+ .-marSmTop.-padSmNow
+  a.-colorPrimary.-line.-dNone.-dSmBlock.-padXsBottom(href=""+aC) Volver al menú
+ .m-boxClass__cPanel.-padSmNow
+  h1.-headerClass=t
+  .m-boxClass__buttons
+   a(href=""+aBack, class="a-button a-noMargin "+n1)
+    button.a-btn.-fillSecondary.-pRelative: .a-btn__text.-arrowLeft
+   a(href=""+aNext, class="a-button "+n2)
+    button.a-btn.-wierdPrimary.-pRelative: .a-btn__text.-arrowRight=next
+  
+ .a-border.-padXsTopBottom.-padSmNow
+  .-borderBottom
+
+
+mixin metadataCourse(t,d,url,img,imgAlt)
+ meta(name="og:title", content=""+t)
+ meta(name="og:description", content=""+d)
+ meta(name="og:url", content=""+url)
+ meta(name="og:type", content="website")
+ meta(name="og:image", content=""+img)
+ meta(name="og:image:alt", content=""+imgAlt)
+ meta(name="og:image:type", content="image/png")
+ meta(name="og:image:secure_url", content=""+img)
+ meta(name="title", content=""+t)
+ meta(name="description", content=""+d)
+ title=t

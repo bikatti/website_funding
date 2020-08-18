@@ -10,6 +10,9 @@
     }
     @include mediaQueriesSm {
         padding: 10px;
+        &.-bigger {
+            max-width: 96%;
+        }
     }
     @include mediaQueries0 {
         padding: 0;
@@ -45,13 +48,18 @@ a.-padModifier {
 section .a-noMargin {
     margin: 0;
 }
+.marLRAuto {
+    margin: 0 auto;
+}
+.-marSmTop {
+    margin-top: $spaceSm;
+}
+.-marXsTop {
+    margin-top: $spaceXs;
+}
 
 section .a-noPadding, .a-noPadding {
     padding: 0 !important;
-}
-
-.-d-none {
-    display: none !important;
 }
 
 section .a-paddingMd {
@@ -98,6 +106,12 @@ section .a-paddingMd {
 .-padMdBottom {
     padding-bottom: $spaceMd;
 }
+.-padSmBottom {
+    padding-bottom: $spaceSm;
+}
+.-padXsBottom {
+    padding-bottom: $spaceXs;
+}
 
 .-padBgTop {
     padding-top: $spaceBg + 10px;
@@ -117,6 +131,9 @@ section .a-paddingMd {
 .-padXsTop {
     padding-top: $spaceXs;
 }
+.-padXs {
+    padding: $spaceXs;
+}
 
 .-containerText {
     margin-bottom: $spaceSm;
@@ -128,9 +145,47 @@ section .a-paddingMd {
     }
 }
 
+// Background color
+.-bg {
+    &Calm {
+        background-color: $color-calm;
+    }
+    &Light {
+        background-color: $color-lightin;
+    }
+}
+
 // Display
 .-dInline {
     display: inline;
+}
+.-d-none {
+    display: none !important;
+}
+.-dNone {
+    display: none;
+}
+.-dSmNone {
+    @include mediaQueriesSm {
+        display: none;
+    }
+}
+.-dSmBlock {
+    @include mediaQueriesSm {
+        display: block;
+    }
+}
+.-dFlex {
+    display: flex;
+}
+.-pRelative {
+    position: relative;
+}
+.-noScroll {
+    overflow: hidden;
+}
+.-index15 {
+    z-index: 15;
 }
 
 .-alignItemsLeft {
@@ -141,4 +196,9 @@ section .a-paddingMd {
 .-borderBottom {
     opacity: .3;
     border-bottom: 1px solid $color-secondary;
+}
+
+// Max-width
+.-mW-80 {
+    max-width: 80%;
 }

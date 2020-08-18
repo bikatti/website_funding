@@ -18,10 +18,14 @@
     +footerLink(linksUrl[1]+linksInternos[5],"", "Fluyendo y depurando la base")
     +footerLink(linksUrl[1]+linksInternos[5],"", "Integrando y sellando la energía")
   .m-footer__article
+   h3 #{titles[11]} a
+   ol.m-listFooter
+    +footerLink("mailto:info@yogaiskra.com","", "info@yogaiskra.com")
    h3 #{titles[10]}
    ol.m-listFooter
     +footerLink(linksUrl[1]+linksInternos[3],"", "Podemos mejorar y ayudar")
     +footerLink(linksUrl[1]+linksInternos[2],"", "Sobre el Ashtanga Yoga")
+   
   .m-footer__subs
    h3 Subscríbete a nuestro newsletter
    +mailChimp("-footer", "", "-footer", "-btnFooter")

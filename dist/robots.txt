@@ -1,3 +1,4 @@
+Sitemap: https://yogaiskra.com/sitemap.xml
 User-agent: *
 Allow: /
 Disallow: /error/

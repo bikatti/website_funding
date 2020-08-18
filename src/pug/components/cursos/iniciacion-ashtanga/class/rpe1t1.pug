@@ -1,0 +1,43 @@
+section.o-pageClass.-pRelative.-noScroll.-bgCalm
+ .m-pageClass__hero
+
+section.o-videoClass.-pRelative
+ .m-boxClass.-box
+  +detailsClass(linksUrl[1]+linksCursos[0],crpe[7],linksUrl[1]+lkCourseIa[1],"","","-d-none","Siguiente")
+  
+  // Contenido del video
+  .o-faqCourse.-marXsTop.-padSmNow
+   .m-faqContent
+    div(class="o-article__wrapper", data-artucle-title="overview")
+     div(class="tab-pane fade show active", id="pills-home" role="tabpanel", aria-labelledby="pills-home-tab")
+      ol(class="wow fadeInUp faq-list -faqClass", style="visibility: visible; animation-name: fadeInUp;")
+       li
+        +nameFaq("faq1","1. "+crpe[0])
+        include rpe1t1/_t1.pug
+
+       li
+        +nameFaq("faq2","2. "+crpe[1])
+        include rpe1t1/_t2.pug
+
+       li
+        +nameFaq("faq3","3. "+crpe[2])
+        include rpe1t1/_t3.pug
+
+       li
+        +nameFaq("faq4","4. "+crpe[3])
+        include rpe1t1/_t4.pug
+
+       li
+        +nameFaq("faq5","5. "+crpe[4])
+        include rpe1t1/_t5.pug
+
+       li
+        +nameFaq("faq6","6. "+crpe[5])
+        include rpe1t1/_t6.pug
+
+       li
+        +nameFaq("faq7","7. "+crpe[6])
+        include rpe1t1/_t7.pug
+
+  a(href="#", class="a-button")
+   button.a-btn.-fillSecondary.-pRelative: .a-btn__text.-arrowRight Arriba

@@ -3,10 +3,17 @@ include ../lib/_mixin.pug
 <!DOCTYPE html>
 html(lang="es")
  include ../base/_head_curse.pug
-  meta(name="title", content=titles[1]+" "+ titles[0])
-  meta(name="description", content="Cursos sorportados por donaciones. Podemos mejorar y ayudar.")
+  meta(name="og:title", content="#{titles[6]} - #{titles[0]}")
+  meta(name="og:description", content="Cursos de yoga online soportados por donaciones y becas por Yogaiskra")
+  meta(name="og:url", content="https://yogaiskra.com/curso")
+  meta(name="og:type", content="website")
+
+  meta(name="googlebot-news", content="noindex")
+  meta(name="title", content="#{titles[6]} - #{titles[0]}")
+  meta(name="description", content="Cursos de yoga online soportados por donaciones y becas por Yogaiskra")
   title #{titles[6]} - #{titles[0]}
- body
+
+ body.-menuSticky
 
   // menu
   include ../base/_header.pug

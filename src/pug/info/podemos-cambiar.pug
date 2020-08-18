@@ -3,9 +3,17 @@ include ../lib/_mixin.pug
 <!DOCTYPE html>
 html(lang="es")
  include ../base/_head.pug
-  meta(name="title", content=titles[0]+" - website de donación para el proyecto de yoga sobre filosofía y yoga ashtanga totalmente online")
-  title #{titles[0]} - Clases y conocimiento sobre en el yoga. Queremos que seas una mejor persona
- body.o-colorIndex
+  meta(name="og:title", content="Podemos mejorar y ayudar")
+  meta(name="og:description", content="El Yoga es uno, pero dentro de él vamos a encontrar diferentes métodos, escuelas o estilos. El Ashtanga Yoga es uno de esos métodos que podemos conseguir")
+  meta(name="og:url", content="https://yogaiskra.com/info/podemos-cambiar")
+  meta(name="og:type", content="article")
+  meta(name="article:publisher", content="https://www.facebook.com/yogaiskra/")
+  meta(name="article:published_time", content="2020-07-16T13:12:54+00:00")
+
+  meta(name="title", content="Podemos mejorar y ayudar")
+  meta(name="description", content="El Yoga es uno, pero dentro de él vamos a encontrar diferentes métodos, escuelas o estilos. El Ashtanga Yoga es uno de esos métodos que podemos conseguir")
+  title Podemos mejorar y ayudar
+ body.o-colorIndex.-menuSticky
 
   // menu
   include ../base/_header.pug

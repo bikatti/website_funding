@@ -148,6 +148,18 @@
     width: $spaceBg;
     content: url('../img/icons/time.svg');
 }
+.a-clock {
+    content: url('../img/icons/clock.svg');
+}
+.a-play {
+    content: url('../img/icons/play.svg');
+}
+.a-playDisabled {
+    content: url('../img/icons/play_disabled.svg');
+}
+.a-document {
+    content: url('../img/icons/document.svg');
+}
 .a-circleLines {
     content: url('../img/icons/circle_lines.svg');
 }
@@ -172,7 +184,17 @@
 .a-squarePointsW {
     content: url('../img/icons/square_points_w.svg');
 }
-
 .a-world {
     content: url('../img/icons/world.svg');
+}
+
+.-download {
+    &::after {
+        margin-left: $spaceXs;
+        display: flex;
+        width: 18px;
+        position: absolute;
+        right: $spaceXs;
+        content: url('../img/icons/download.svg');
+    }
 }
