@@ -18,6 +18,7 @@
 @import "base/links";
 
 // Components
+@import "components/animation";
 @import "components/menu";
 @import "components/resources";
 @import "components/cursos/content";
@@ -28,4 +29,6 @@
 @import "components/class/video_class";
 @import "components/cursos/faq";
 @import "components/cursos/leftside_content";
+@import "components/modal";
+@import "components/contact";
 @import "components/footer";

@@ -73,10 +73,15 @@ ol {
     margin-bottom: $fontSM2;
 }
 
+label {
+    margin: 0;
+}
 svg:not(:root) {
     overflow: hidden;
 }
-
+.-pointer {
+    cursor: pointer;
+}
 .o-Hidden {
     overflow-x: hidden;
 }

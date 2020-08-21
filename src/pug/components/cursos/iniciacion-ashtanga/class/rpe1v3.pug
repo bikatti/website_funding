@@ -3,13 +3,23 @@ section.o-pageClass.-pRelative.-noScroll.-bgCalm
 
 section.o-videoClass.-pRelative
  .m-boxClass.-box
-  +videoClass("https://www.youtube.com/embed/lA9-R62HpQ0")
+  +videoClass("https://www.youtube.com/embed/XtmVFnXOp8o")
   
-  +detailsClass(linksUrl[1]+linksCursos[0],crpe[2],linksUrl[1]+lkCourseIa[1],"",linksUrl[1]+lkCourseIa[3],"",crpe[3])
+  +detailsClass(linksUrl[1]+linksCursos[0],"3. "+crpe[2],linksUrl[1]+lkCourseIa[1],"",linksUrl[1]+lkCourseIa[3],"","Siguiente")
 
   .m-boxClass__description.-padSmNow
-   p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat ligula eu dolor tempor, eu ultrices metus elementum. Aliquam erat volutpat. Cras consectetur nec lorem tristique aliquam. Vestibulum id lacus id dolor elementum aliquet. Proin non quam ut lorem mattis malesuada. Morbi sed blandit augue. Integer vehicula risus in volutpat tempus. Sed gravida eget tortor in vulputate. Etiam elit nisi, consectetur non dui in, feugiat dapibus turpis. Ut sollicitudin gravida arcu, sit amet cursus justo mattis tempus.
-   .m-boxClass__download
+   p Evidencias históricas de los orígenes del Yoga.  Textos filosóficos. Ashtanga yoga o Ashtanga Vinyasa Yoga. Historia de la escuela de Ashtanga Yoga fundada por Sri K Pattabhi Jois. Sucesión de maestros en el Ashtanga Yoga. Disciplinas que han derivado de esta escuela.
+   //-.m-boxClass__download
     h3 Recursos
     ul.m-linksList.-marXsTop
-     li.-pRelative: a.-download(href="#") Hello
+     li.-pRelative: a.-download(href="#") Guía entera del curso PDF
+  
+  // Contenido del video
+  .o-faqCourse.-marXsTop.-padSmNow
+   .m-faqContent
+    div(class="o-article__wrapper", data-artucle-title="overview")
+     div(class="tab-pane fade show active", id="pills-home" role="tabpanel", aria-labelledby="pills-home-tab")
+      ol(class="wow fadeInUp faq-list -faqClass", style="visibility: visible; animation-name: fadeInUp;")
+       li
+        +nameFaq("faq3","Escrito con el contenido del video")
+        include rpe1t1/_t3.pug

@@ -1,0 +1,50 @@
+.o-contactModal {
+    display: none;
+    &.-isActive {
+        display: block;
+    }
+}
+.-blur {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+    background-color: $color-darkgrey;
+    z-index: 1090;
+    &.-isActive {
+        display: block;
+    }
+}
+.o-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    width: 100%;
+    height: 100%;
+    &.-open {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+.m-modalDialog {
+    margin: 90px auto $spaceSm auto;
+    width: 768px;
+    position: relative;
+    pointer-events: none;
+    @include mediaQueriesMd {
+        width: 80%;
+    }
+    @include mediaQueriesXs {
+        width: 88%;
+    }
+}
+.m-modal__content {
+    border: 0;
+    border-radius: calc(#{$spaceXs} / 2);
+    background-color: $color-lightin;
+    pointer-events: auto;
+}

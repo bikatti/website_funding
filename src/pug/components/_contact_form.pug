@@ -1,0 +1,25 @@
+section.o-formContact.-padRgTopBottom
+ .m-formContact__content.-ContainerUniversal
+  .a-burguerOut#burgerOutModal
+   img.a-burguerOut__menu(src=linksUrl[1]+"assets/img/icons/cancel.svg", alt="Icono de cierre del menu")
+  form.m-form(action=linksUrl[1]+"assets/php/info.php", method="POST")
+   .m-formContact
+    h2.-h1.-colorPrimary Envíanos un mensaje
+    .m-form__group
+     input(type="text", name="nombre", id="", required)
+     span.m-form__line
+     label Nombre
+    .m-form__group
+     input(type="email", name="email", id="", required)
+     span.m-form__line
+     label Email
+    .m-form__group
+     input(type="text", name="asunto", id="", required)
+     span.m-form__line
+     label Asunto
+    .m-form__group
+     textarea(name="mensaje", id="", rows="2", required)
+     span.m-form__line
+     label Mensaje
+    .a-button
+     button.a-btn.-outlinePrimary(href=linksUrl[1]+linksCursos[0]): .a-btn__text Enviar

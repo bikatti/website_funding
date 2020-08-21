@@ -18,9 +18,6 @@
     +footerLink(linksUrl[1]+linksInternos[5],"", "Fluyendo y depurando la base")
     +footerLink(linksUrl[1]+linksInternos[5],"", "Integrando y sellando la energía")
   .m-footer__article
-   h3 #{titles[11]} a
-   ol.m-listFooter
-    +footerLink("mailto:info@yogaiskra.com","", "info@yogaiskra.com")
    h3 #{titles[10]}
    ol.m-listFooter
     +footerLink(linksUrl[1]+linksInternos[3],"", "Podemos mejorar y ayudar")
@@ -29,11 +26,13 @@
   .m-footer__subs
    h3 Subscríbete a nuestro newsletter
    +mailChimp("-footer", "", "-footer", "-btnFooter")
-   h3 Puedes apoyarnos por:
+   h3 Encuéntranos en:
    .m-footer__things
     a(href=linksExternos[3], class="a-footerIcons"): img(src=linksUrl[1]+"assets/img/icons/f_instagram_w.svg", alt="Icono de instagram")
     a(href=linksExternos[4], class="a-footerIcons"): img(src=linksUrl[1]+"assets/img/icons/f_youtube_w.svg", alt="Icono de youtube")
     a(href=linksExternos[2], class="a-footerIcons"): img(src=linksUrl[1]+"assets/img/icons/f_patreon_w.svg", alt="Icono de patreon")
     a(href=linksExternos[0], class="a-footerIcons"): img(src=linksUrl[1]+"assets/img/icons/f_wordpress_w.svg", alt="Icono de wordpress")
+    .a-button
+     button.a-btn.-fillSecondary: #contact5.-pointer Contactar
   .m-footer__copy
    p Copyright © 2020 Yogaiskra | #[i.a-world] #[a(href=linksUrl[1]) Español ]

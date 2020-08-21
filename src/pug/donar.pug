@@ -24,11 +24,17 @@ html(lang="es")
   .-ContainerUniversal
    include components/donate/_problem.pug
    include components/donate/_text.pug
-  
 
   // cards
   include components/index/_cards.pug
   .-padBgBottom
 
+  // contact form
+  .o-contactModal
+   .m-modalDialog
+    .m-modal__content.-fadeInUp
+     include components/_contact_form.pug
+  .-blur
+  
   // footer
   include base/_footer.pug

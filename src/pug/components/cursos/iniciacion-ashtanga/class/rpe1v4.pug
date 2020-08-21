@@ -3,13 +3,23 @@ section.o-pageClass.-pRelative.-noScroll.-bgCalm
 
 section.o-videoClass.-pRelative
  .m-boxClass.-box
-  +videoClass("https://www.youtube.com/embed/lA9-R62HpQ0")
+  +videoClass("https://www.youtube.com/embed/n4ZUqjtd8NI")
   
-  +detailsClass(linksUrl[1]+linksCursos[0],crpe[3],linksUrl[1]+lkCourseIa[2],"",linksUrl[1]+lkCourseIa[4],"",crpe[4])
+  +detailsClass(linksUrl[1]+linksCursos[0],"4. "+crpe[3],linksUrl[1]+lkCourseIa[2],"",linksUrl[1]+lkCourseIa[4],"","Siguiente")
 
   .m-boxClass__description.-padSmNow
-   p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat ligula eu dolor tempor, eu ultrices metus elementum. Aliquam erat volutpat. Cras consectetur nec lorem tristique aliquam. Vestibulum id lacus id dolor elementum aliquet. Proin non quam ut lorem mattis malesuada. Morbi sed blandit augue. Integer vehicula risus in volutpat tempus. Sed gravida eget tortor in vulputate. Etiam elit nisi, consectetur non dui in, feugiat dapibus turpis. Ut sollicitudin gravida arcu, sit amet cursus justo mattis tempus.
-   .m-boxClass__download
+   p Qué hace al Ashtanga Yoga un método tan particular. Cómo, cuando y cuántas veces se práctica durante la semana.  Cómo se enseña y se aprende. Por qué se descansa los días de luna. Cómo se obtiene una autorización o certificación para enseñar este método.
+   //-.m-boxClass__download
     h3 Recursos
     ul.m-linksList.-marXsTop
-     li.-pRelative: a.-download(href="#") Hello
+     li.-pRelative: a.-download(href="#") Guía entera del curso PDF
+  
+  // Contenido del video
+  .o-faqCourse.-marXsTop.-padSmNow
+   .m-faqContent
+    div(class="o-article__wrapper", data-artucle-title="overview")
+     div(class="tab-pane fade show active", id="pills-home" role="tabpanel", aria-labelledby="pills-home-tab")
+      ol(class="wow fadeInUp faq-list -faqClass", style="visibility: visible; animation-name: fadeInUp;")
+       li
+        +nameFaq("faq4","Escrito con el contenido del video")
+        include rpe1t1/_t4.pug

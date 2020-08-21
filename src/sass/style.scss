@@ -18,6 +18,7 @@
 @import "base/links";
 
 // Components
+@import "components/animation";
 @import "components/menu";
 @import "components/resources";
 @import "components/index/hero";
@@ -27,4 +28,6 @@
 @import "components/index/blog_text";
 //@import "components/index/explain";
 @import "components/resources";
+@import "components/modal";
+@import "components/contact";
 @import "components/footer";
