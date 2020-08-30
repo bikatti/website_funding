@@ -3,12 +3,13 @@ include ../lib/_mixin.pug
 <!DOCTYPE html>
 html(lang="es")
  include ../base/_head_curse.pug
-  meta(name="og:title", content="#{nameCourse[0]} info - #{titles[0]}")
+  meta(name="og:title", content=nameCourse[0]+" info - "+titles[0])
   meta(name="og:description", content="Aprende los conceptos y fundamentos en lo que se basa la práctica de posturas en el Ashtanga yoga, su filosofía e historia y haz una práctica de iniciación con Yogaiskra")
   meta(name="og:url", content="https://yogaiskra.com/cursos-online/iniciacion-ashtanga-info")
+  link(rel="canonical", href="https://yogaiskra.com/cursos-online/iniciacion-ashtanga-info")
   meta(name="og:type", content="website")
 
-  meta(name="title", content="#{nameCourse[0]} info - #{titles[0]}")
+  meta(name="title", content=nameCourse[0]+" info - "+titles[0])
   meta(name="description", content="Cursos de yoga online soportados por donaciones y becas por Yogaiskra")
   title #{nameCourse[0]} info - #{titles[0]}
  body.o-Hidden.-menuSticky

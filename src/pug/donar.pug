@@ -3,13 +3,14 @@ include lib/_mixin.pug
 <!DOCTYPE html>
 html(lang="es")
  include base/_head.pug
-  meta(name="og:title", content="#{titles[4]} - #{titles[0]}")
+  meta(name="og:title", content=titles[4]+" - "+titles[0])
   meta(name="og:description", content="Puedes mejorar y ayudar a otros apoyando esta plataforma mientras expandes tu conciencia")
   meta(name="og:url", content="https://yogaiskra.com/donar")
+  link(rel="canonical", href="https://yogaiskra.com/donar")
   meta(name="og:type", content="website")
 
   meta(name="googlebot-news", content="noindex")
-  meta(name="title", content="#{titles[4]} - #{titles[0]}")
+  meta(name="title", content=titles[4]+" - "+titles[0])
   meta(name="description", content="Puedes mejorar y ayudar a otros apoyando esta plataforma mientras expandes tu conciencia")
   title #{titles[4]} - #{titles[0]}
  body.o-colorIndex.-menuSticky

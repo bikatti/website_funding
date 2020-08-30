@@ -3,13 +3,19 @@ section.o-pageClass.-pRelative.-noScroll.-bgCalm
 
 section.o-videoClass.-pRelative
  .m-boxClass.-box
-  +videoClass("https://www.youtube.com/embed/lA9-R62HpQ0")
+  +videoClass("https://www.youtube.com/embed/DeBRv7UO658")
   
-  +detailsClass(linksUrl[1]+linksCursos[0],crpe[5],linksUrl[1]+lkCourseIa[4],"",linksUrl[1]+lkCourseIa[6],"",crpe[6])
+  +detailsClass(linksUrl[1]+linksCursos[0],"6. "+crpe[5],linksUrl[1]+lkCourseIa[4],"",linksUrl[1]+lkCourseIa[7],"","Siguiente")
 
   .m-boxClass__description.-padSmNow
-   p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat ligula eu dolor tempor, eu ultrices metus elementum. Aliquam erat volutpat. Cras consectetur nec lorem tristique aliquam. Vestibulum id lacus id dolor elementum aliquet. Proin non quam ut lorem mattis malesuada. Morbi sed blandit augue. Integer vehicula risus in volutpat tempus. Sed gravida eget tortor in vulputate. Etiam elit nisi, consectetur non dui in, feugiat dapibus turpis. Ut sollicitudin gravida arcu, sit amet cursus justo mattis tempus.
-   .m-boxClass__download
-    h3 Recursos
-    ul.m-linksList.-marXsTop
-     li.-pRelative: a.-download(href="#") Hello
+   p La estructura general de las series del Ashtanga Yoga. Mantras de apertura y cierre de la práctica. Bibliografía usada para el desarrollo de este curso y que Yogaiskra recomienda leer.
+
+  // Contenido del video
+  .o-faqCourse.-marXsTop.-padSmNow
+   .m-faqContent
+    div(class="o-article__wrapper", data-artucle-title="overview")
+     div(class="tab-pane fade show active", id="pills-home" role="tabpanel", aria-labelledby="pills-home-tab")
+      ol(class="wow fadeInUp faq-list -faqClass", style="visibility: visible; animation-name: fadeInUp;")
+       li
+        +nameFaq("faq6","Escrito con el contenido del video")
+        include rpe1t1/_t6.pug
