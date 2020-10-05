@@ -6,6 +6,9 @@ a {
     &:hover {
         text-decoration: none;
     }
+    @include mediaQueries0 {
+        font-size:$fontS2;
+    }
 }
 
 .a-itemLink {

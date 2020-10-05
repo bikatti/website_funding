@@ -83,12 +83,7 @@
     }
     @include mediaQueriesXs {
         .-fillSecondary {
-            padding: 8px 32%;
-        }
-    }
-    @include mediaQueries0 {
-        .-fillSecondary {
-            padding: 8px 30%;
+            display: block;
         }
     }
 }

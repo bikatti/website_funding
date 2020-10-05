@@ -92,6 +92,11 @@
             width: 280px;
         }
     }
+    @include mediaQueriesXxs {
+        img {
+            width: 250px;
+        }
+    }
 }
 .m-footer__us {
     grid-area: usFooter;
@@ -142,6 +147,9 @@
     }
     @include mediaQueriesMd {
         justify-content: center;
+        p {
+            font-size: $fontSM1;
+        }
     }
 }
 .m-footer__things {
@@ -163,6 +171,15 @@
     &:last-child {
         width: 60px;
         margin-left: 5px;
+    }
+    @include mediaQueriesXs {
+        width: $spaceRg;
+        &:first-child {
+            width: 30px;
+        }
+    }
+    @include mediaQueries0 {
+        margin-left: calc(#{$spaceXs} / 2);
     }
     img {
         width: 100%;

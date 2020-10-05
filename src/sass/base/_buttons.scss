@@ -64,6 +64,9 @@
     font-size: $fontS2 + 3;
     font-weight: 600;
     padding: 6px $spaceRg;
+    @include mediaQueries0 {
+        font-size: $fontS2;
+    }
 }
 
 .-wierdPrimary {

@@ -65,4 +65,9 @@
     input:focus~.m-form__line::before, textarea:focus~.m-form__line::before {
         width: 100%;
     }
+    @include mediaQueries0 {
+        input, textarea {
+            font-size: $fontS2;
+        }
+    }
 }

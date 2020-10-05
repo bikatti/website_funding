@@ -27,7 +27,7 @@ h2 {
         font-size: $fontSM3;
     }
     @include mediaQueries0 {
-        font-size: $font02;
+        font-size: 18px;
     }
 }
 
@@ -54,6 +54,9 @@ p, i, ol, li {
     @include mediaQueriesMd {
         line-height: 1.4;
         font-size: $fontSM2;
+    }
+    @include mediaQueries0 {
+        font-size: $fontSM1;
     }
 }
 

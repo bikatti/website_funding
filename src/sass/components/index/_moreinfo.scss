@@ -47,6 +47,11 @@
     @include mediaQueriesMd {
         align-items: center;
     }
+    @include mediaQueries0 {
+        .a-moreInfo {
+            font-size: $fontSM3;
+        }
+    }
 }
 
 .m-infoImgLinks__podcast {
