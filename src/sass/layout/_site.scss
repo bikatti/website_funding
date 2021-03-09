@@ -3,6 +3,10 @@ html, body, p, div, h1, h2, h3, ul, ol, img, form {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
 }
@@ -84,4 +88,8 @@ svg:not(:root) {
 }
 .o-Hidden {
     overflow-x: hidden;
+}
+
+.-scrollingMargin {
+    scroll-margin-top: 50px;
 }

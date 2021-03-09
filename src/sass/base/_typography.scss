@@ -167,7 +167,7 @@ ol {
             display: block;
             position: absolute;
             margin-top: 7px;
-            left: 5px;
+            margin-left: -#{$spaceSm};
             content: ' ';
             border-radius: 50%;
             transition: all .2s;

@@ -1,0 +1,51 @@
+include lib/_var.pug
+include lib/_mixin.pug
+<!DOCTYPE html>
+html(lang="es")
+ include base/_head.pug
+  meta(name="og:title", content=titles[14]+" - "+titles[0])
+  meta(name="og:description", content="Estudiante y practicante sincera de las vías para el auto conocimiento y la realización espiritual. Sus pilares con la disciplina, la fe y la entrega. Como profesora la motiva el servicio desinteresado y devocional.")
+  meta(name="og:url", content="https://yogaiskra.com/resena-curricular")
+  link(rel="canonical", href="https://yogaiskra.com/resena-curricular")
+  meta(name="og:type", content="article")
+  meta(name="article:publisher", content="https://www.facebook.com/yogaiskra/")
+  meta(name="article:published_time", content="2020-07-16T13:12:54+00:00")
+
+  meta(name="title", content=titles[14]+" - "+titles[0])
+  meta(name="description", content="Estudiante y practicante sincera de las vías para el auto conocimiento y la realización espiritual. Sus pilares con la disciplina, la fe y la entrega. Como profesora la motiva el servicio desinteresado y devocional.")
+  title #{titles[14]} - #{titles[0]}
+  include base/_headjs.pug
+ body.-menuSticky
+
+  // menu
+  include base/_header.pug
+
+  // hero
+  include components/resena_curricular/_hero.pug
+
+  // Bookmarks
+  include components/resena_curricular/_cards.pug
+
+  // Icon-Button
+  .o-buttonBookmark
+   a(href="#upBookmark"): .m-buttonBookmark
+    img.a-iconBookmark(src=linksUrl[1]+"assets/img/icons/bookmark.svg")
+
+  // text
+  include components/resena_curricular/_text.pug
+
+  // Fund
+  include components/index/_fund.pug
+
+  // contact form
+  .o-contactModal
+   .m-modalDialog
+    .m-modal__content.-fadeInUp
+     include components/_contact_form.pug
+  .-blur#contact1
+   #contact2
+    #contact3
+     #contact4
+
+  // footer
+  include base/_footer.pug
