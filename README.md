@@ -1,4 +1,4 @@
-<h1 class="center">
+<h1 align="center">
 Yogaiskra.com - Website V1.0
 </h1>
 
